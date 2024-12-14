@@ -2,100 +2,96 @@ module Top_Module(
     input wire clk_10kHz,
     input wire clk_1MHz,
     input wire reset,
-    output wire [15:0] mac_output
+    output wire [31:0] mac_output
 );
 
     // Internal Signals
-    reg [5:0] cmem_write_addr = 0;
-    reg cmem_write_enable = 1;
-    reg [15:0] cmem_data;
-    reg [15:0] cmem_values [0:63]; // Array to hold cmem values loaded from file
-
-    wire [15:0] imem_data_out;
-    reg [5:0] imem_write_addr = 0;
-    reg imem_write_enable = 0;
-    reg [15:0] imem_data_in;
-    reg [15:0] imem_values [0:63]; // Array to hold imem values loaded from file
+    wire [15:0] xCurr, coeffCurr;
+    reg [15:0] xin, cin;
+    reg [5:0] xaddr, caddr;
+    reg xload, cload;
 
     wire [15:0] fifo_data_out;
     wire fifo_empty;
+    reg fifo_read_enable;
 
-    reg [5:0] mac_iterations = 0;
-    reg mac_enable = 0;
+    wire mac_tick;
+    reg [15:0] mac_x, mac_coeff;
 
-    integer i;
-
-    // File I/O for loading cmem and imem values
-    initial begin
-        $readmemb("coeffVals.txt", cmem_values); // Load cmem values from text file
-        $readmemb("xVals.txt", imem_values); // Load imem values from text file
-    end
-
-    // Instance of MEM_top
-    MEM_top mem (
+    // Instantiate MEM_top
+    MEM_top mem_inst (
         .clk(clk_10kHz),
-        .reset(reset),
-        .write_enable(cmem_write_enable),
-        .write_addr(cmem_write_addr),
-        .write_data(cmem_data),
-        .imem_write_enable(imem_write_enable),
-        .imem_write_addr(imem_write_addr),
-        .imem_write_data(imem_data_in),
-        .imem_read_data(imem_data_out)
+        .xload(xload),
+        .cload(cload),
+        .caddr(caddr),
+        .xaddr(xaddr),
+        .cin(cin),
+        .xin(xin),
+        .xCurr(xCurr),
+        .coeffCurr(coeffCurr)
     );
 
-    // Instance of FIFO
-    FIFO fifo (
-        .clk(clk_10kHz),
-        .reset(reset),
-        .data_in(imem_data_out),
-        .data_out(fifo_data_out),
-        .empty(fifo_empty),
-        .write_enable(imem_write_enable),
-        .read_enable(mac_enable)
+    // Instantiate FIFO
+    FIFO fifo_inst (
+        .clk_wr(clk_10kHz),
+        .clk_rd(clk_1MHz),
+        .wr_en(xload),
+        .rd_en(fifo_read_enable),
+        .rst(reset),
+        .wr_data(xCurr),
+        .rd_data(fifo_data_out),
+        .full(),
+        .empty(fifo_empty)
     );
 
-    // Instance of MAC
-    MAC mac (
+    // Instantiate MAC
+    MAC mac_inst (
+        .x(mac_x),
+        .coeff(mac_coeff),
         .clk(clk_1MHz),
-        .reset(reset),
-        .data_in(fifo_data_out),
-        .output_ready(mac_enable),
-        .result(mac_output)
+        .rst(reset),
+        .y(mac_output),
+        .tick(mac_tick)
     );
 
     // Control Logic
     always @(posedge clk_10kHz or posedge reset) begin
         if (reset) begin
-            cmem_write_addr <= 0;
-            cmem_write_enable <= 1;
-            imem_write_addr <= 0;
-            imem_write_enable <= 0;
-            mac_iterations <= 0;
+            xaddr <= 0;
+            caddr <= 0;
+            xin <= 0;
+            cin <= 0;
+            xload <= 0;
+            cload <= 1;
         end else begin
-            if (cmem_write_enable) begin
-                cmem_data <= cmem_values[cmem_write_addr]; // Use loaded cmem values
-                cmem_write_addr <= cmem_write_addr + 1;
-                if (cmem_write_addr == 63) cmem_write_enable <= 0;
-            end else begin
-                imem_write_enable <= 1;
-                imem_data_in <= imem_values[imem_write_addr]; // Use loaded imem values
-                imem_write_addr <= imem_write_addr + 1;
-                if (imem_write_addr == 63) begin
-                    imem_write_enable <= 0;
-                    mac_enable <= 1;
+            if (cload) begin
+                cin <= caddr; // Example coefficient data
+                caddr <= caddr + 1;
+                if (caddr == 63) begin
+                    cload <= 0;
+                    xload <= 1;
                 end
+            end else if (xload) begin
+                xin <= xaddr; // Example input data
+                xaddr <= xaddr + 1;
+                if (xaddr == 63) xload <= 0;
             end
         end
     end
 
     always @(posedge clk_1MHz or posedge reset) begin
         if (reset) begin
-            mac_iterations <= 0;
-            mac_enable <= 0;
-        end else if (mac_enable) begin
-            mac_iterations <= mac_iterations + 1;
-            if (mac_iterations == 63) mac_enable <= 0;
+            mac_x <= 0;
+            mac_coeff <= 0;
+            fifo_read_enable <= 0;
+        end else begin
+            if (!fifo_empty) begin
+                fifo_read_enable <= 1;
+                mac_x <= fifo_data_out;
+                mac_coeff <= coeffCurr;
+            end else begin
+                fifo_read_enable <= 0;
+            end
         end
     end
 
