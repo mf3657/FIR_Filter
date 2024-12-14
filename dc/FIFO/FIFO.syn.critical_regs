@@ -1,0 +1,108 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+        -max_paths 10000
+        -sort_by slack
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+FIFO_MEM_reg_0__15_/D (DFFRXLTS) 99002.49 f       99999.64       997.15
+FIFO_MEM_reg_0__14_/D (DFFRXLTS) 99002.49 f       99999.64       997.15
+FIFO_MEM_reg_0__13_/D (DFFRXLTS) 99002.49 f       99999.64       997.15
+FIFO_MEM_reg_0__11_/D (DFFRXLTS) 99002.49 f       99999.64       997.15
+FIFO_MEM_reg_0__10_/D (DFFRXLTS) 99002.49 f       99999.64       997.15
+FIFO_MEM_reg_0__9_/D (DFFRXLTS) 99002.49 f        99999.64       997.15
+FIFO_MEM_reg_0__7_/D (DFFRXLTS) 99002.49 f        99999.64       997.15
+FIFO_MEM_reg_0__6_/D (DFFRXLTS) 99002.49 f        99999.64       997.15
+FIFO_MEM_reg_0__5_/D (DFFRXLTS) 99002.49 f        99999.64       997.15
+FIFO_MEM_reg_0__3_/D (DFFRXLTS) 99002.49 f        99999.64       997.15
+FIFO_MEM_reg_0__2_/D (DFFRXLTS) 99002.49 f        99999.64       997.15
+FIFO_MEM_reg_0__1_/D (DFFRXLTS) 99002.49 f        99999.64       997.15
+FIFO_MEM_reg_2__0_/D (DFFRXLTS) 99002.26 f        99999.64       997.38
+FIFO_MEM_reg_2__15_/D (DFFRXLTS) 99002.26 f       99999.64       997.38
+FIFO_MEM_reg_2__14_/D (DFFRXLTS) 99002.26 f       99999.64       997.38
+FIFO_MEM_reg_2__13_/D (DFFRXLTS) 99002.26 f       99999.64       997.38
+FIFO_MEM_reg_2__12_/D (DFFRXLTS) 99002.26 f       99999.64       997.38
+FIFO_MEM_reg_2__11_/D (DFFRXLTS) 99002.26 f       99999.64       997.38
+FIFO_MEM_reg_2__10_/D (DFFRXLTS) 99002.26 f       99999.64       997.38
+FIFO_MEM_reg_2__9_/D (DFFRXLTS) 99002.26 f        99999.64       997.38
+FIFO_MEM_reg_2__8_/D (DFFRXLTS) 99002.26 f        99999.64       997.38
+FIFO_MEM_reg_2__7_/D (DFFRXLTS) 99002.26 f        99999.64       997.38
+FIFO_MEM_reg_2__6_/D (DFFRXLTS) 99002.26 f        99999.64       997.38
+FIFO_MEM_reg_2__5_/D (DFFRXLTS) 99002.26 f        99999.64       997.38
+FIFO_MEM_reg_2__4_/D (DFFRXLTS) 99002.26 f        99999.64       997.38
+FIFO_MEM_reg_2__3_/D (DFFRXLTS) 99002.26 f        99999.64       997.38
+FIFO_MEM_reg_2__2_/D (DFFRXLTS) 99002.26 f        99999.64       997.38
+FIFO_MEM_reg_2__1_/D (DFFRXLTS) 99002.26 f        99999.64       997.38
+FIFO_MEM_reg_1__0_/D (DFFRXLTS) 99002.23 f        99999.64       997.41
+FIFO_MEM_reg_1__15_/D (DFFRXLTS) 99002.23 f       99999.64       997.41
+FIFO_MEM_reg_1__14_/D (DFFRXLTS) 99002.23 f       99999.64       997.41
+FIFO_MEM_reg_1__13_/D (DFFRXLTS) 99002.23 f       99999.64       997.41
+FIFO_MEM_reg_1__12_/D (DFFRXLTS) 99002.23 f       99999.64       997.41
+FIFO_MEM_reg_1__11_/D (DFFRXLTS) 99002.23 f       99999.64       997.41
+FIFO_MEM_reg_1__10_/D (DFFRXLTS) 99002.23 f       99999.64       997.41
+FIFO_MEM_reg_1__9_/D (DFFRXLTS) 99002.23 f        99999.64       997.41
+FIFO_MEM_reg_1__8_/D (DFFRXLTS) 99002.23 f        99999.64       997.41
+FIFO_MEM_reg_1__7_/D (DFFRXLTS) 99002.23 f        99999.64       997.41
+FIFO_MEM_reg_1__6_/D (DFFRXLTS) 99002.23 f        99999.64       997.41
+FIFO_MEM_reg_1__5_/D (DFFRXLTS) 99002.23 f        99999.64       997.41
+FIFO_MEM_reg_1__4_/D (DFFRXLTS) 99002.23 f        99999.64       997.41
+FIFO_MEM_reg_1__3_/D (DFFRXLTS) 99002.23 f        99999.64       997.41
+FIFO_MEM_reg_1__2_/D (DFFRXLTS) 99002.23 f        99999.64       997.41
+FIFO_MEM_reg_1__1_/D (DFFRXLTS) 99002.23 f        99999.64       997.41
+rd_ptr_reg_1_/D (DFFRX2TS)          2.09 r          999.52       997.43
+rd_ptr_reg_0_/D (DFFRX2TS)          2.06 r          999.52       997.46
+FIFO_MEM_reg_3__0_/D (DFFRXLTS) 99002.14 f        99999.64       997.50
+FIFO_MEM_reg_3__15_/D (DFFRXLTS) 99002.14 f       99999.64       997.50
+FIFO_MEM_reg_3__14_/D (DFFRXLTS) 99002.14 f       99999.64       997.50
+FIFO_MEM_reg_3__13_/D (DFFRXLTS) 99002.14 f       99999.64       997.50
+FIFO_MEM_reg_3__12_/D (DFFRXLTS) 99002.14 f       99999.64       997.50
+FIFO_MEM_reg_3__11_/D (DFFRXLTS) 99002.14 f       99999.64       997.50
+FIFO_MEM_reg_3__10_/D (DFFRXLTS) 99002.14 f       99999.64       997.50
+FIFO_MEM_reg_3__9_/D (DFFRXLTS) 99002.14 f        99999.64       997.50
+FIFO_MEM_reg_3__8_/D (DFFRXLTS) 99002.14 f        99999.64       997.50
+FIFO_MEM_reg_3__7_/D (DFFRXLTS) 99002.14 f        99999.64       997.50
+FIFO_MEM_reg_3__6_/D (DFFRXLTS) 99002.14 f        99999.64       997.50
+FIFO_MEM_reg_3__5_/D (DFFRXLTS) 99002.14 f        99999.64       997.50
+FIFO_MEM_reg_3__4_/D (DFFRXLTS) 99002.14 f        99999.64       997.50
+FIFO_MEM_reg_3__3_/D (DFFRXLTS) 99002.14 f        99999.64       997.50
+FIFO_MEM_reg_3__2_/D (DFFRXLTS) 99002.14 f        99999.64       997.50
+FIFO_MEM_reg_3__1_/D (DFFRXLTS) 99002.14 f        99999.64       997.50
+FIFO_MEM_reg_0__12_/D (DFFRXLTS) 99002.13 f       99999.64       997.51
+FIFO_MEM_reg_0__8_/D (DFFRXLTS) 99002.13 f        99999.64       997.51
+FIFO_MEM_reg_0__0_/D (DFFRXLTS) 99001.95 f        99999.64       997.70
+FIFO_MEM_reg_0__4_/D (DFFRXLTS) 99001.95 f        99999.64       997.70
+rd_data[15] (out)                   1.86 f          999.90       998.04
+rd_data[14] (out)                   1.86 f          999.90       998.04
+rd_data[13] (out)                   1.86 f          999.90       998.04
+rd_data[12] (out)                   1.86 f          999.90       998.04
+rd_data[11] (out)                   1.86 f          999.90       998.04
+rd_data[10] (out)                   1.86 f          999.90       998.04
+rd_data[9] (out)                    1.86 f          999.90       998.04
+rd_data[8] (out)                    1.86 f          999.90       998.04
+rd_data[7] (out)                    1.86 f          999.90       998.04
+rd_data[6] (out)                    1.86 f          999.90       998.04
+rd_data[5] (out)                    1.86 f          999.90       998.04
+rd_data[4] (out)                    1.86 f          999.90       998.04
+rd_data[3] (out)                    1.86 f          999.90       998.04
+rd_data[2] (out)                    1.86 f          999.90       998.04
+rd_data[1] (out)                    1.86 f          999.90       998.04
+rd_data[0] (out)                    1.86 f          999.90       998.04
+wr_ptr_reg_1_/D (DFFRXLTS)      99001.60 f        99999.65       998.05
+empty (out)                         1.43 r          999.90       998.47
+wr_ptr_reg_0_/D (DFFRXLTS)      99001.03 f        99999.64       998.61
+full (out)                          1.24 r          999.90       998.66
+count_reg_0_/D (DFFRXLTS)       99000.85 r        99999.57       998.72
+count_reg_2_/D (DFFRXLTS)       99000.63 r        99999.54       998.91
+count_reg_1_/D (DFFRXLTS)       99000.49 r        99999.58       999.09
+
+1

@@ -1,0 +1,123 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+        -max_paths 10000
+        -sort_by slack
+Design : MAC
+Version: U-2022.12-SP7
+Date   : Sun Nov 17 22:58:20 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+y_reg_30_/D (DFFHQX4TS)             3.61 f            1.75        -1.86
+y_reg_19_/D (DFFHQX4TS)             3.61 f            1.75        -1.86
+y_reg_20_/D (DFFHQX4TS)             3.61 f            1.75        -1.86
+y_reg_29_/D (DFFHQX8TS)             3.61 f            1.75        -1.86
+y_reg_22_/D (DFFHQX8TS)             3.61 f            1.75        -1.86
+y_reg_26_/D (DFFHQX8TS)             3.61 f            1.75        -1.86
+y_reg_24_/D (DFFHQX8TS)             3.61 f            1.75        -1.86
+y_reg_28_/D (DFFHQX8TS)             3.61 f            1.75        -1.86
+y_reg_31_/D (DFFHQX8TS)             3.61 f            1.75        -1.86
+accum_reg_19_/D (DFFHQX4TS)         3.63 r            1.78        -1.85
+accum_reg_30_/D (DFFHQX4TS)         3.63 r            1.78        -1.85
+accum_reg_20_/D (DFFHQX4TS)         3.63 r            1.78        -1.85
+accum_reg_24_/D (DFFHQX4TS)         3.63 r            1.78        -1.85
+accum_reg_26_/D (DFFHQX4TS)         3.63 r            1.78        -1.85
+accum_reg_22_/D (DFFHQX4TS)         3.63 r            1.78        -1.85
+accum_reg_29_/D (DFFHQX4TS)         3.63 r            1.78        -1.85
+accum_reg_28_/D (DFFHQX4TS)         3.63 r            1.78        -1.85
+accum_reg_31_/D (DFFHQX4TS)         3.63 r            1.78        -1.85
+y_reg_25_/D (DFFHQX8TS)             3.60 f            1.75        -1.85
+y_reg_15_/D (DFFQX1TS)              3.51 f            1.67        -1.84
+accum_reg_16_/D (DFFX4TS)           3.52 f            1.68        -1.84
+y_reg_21_/D (DFFHQX8TS)             3.58 f            1.75        -1.83
+accum_reg_15_/D (DFFX4TS)           3.50 f            1.68        -1.82
+y_reg_27_/D (DFFHQX8TS)             3.58 f            1.75        -1.82
+accum_reg_25_/D (DFFHQX4TS)         3.57 f            1.76        -1.81
+y_reg_17_/D (DFFQX1TS)              3.48 f            1.67        -1.81
+y_reg_16_/D (DFFHQX4TS)             3.54 f            1.74        -1.80
+y_reg_23_/D (DFFHQX4TS)             3.55 f            1.75        -1.80
+accum_reg_21_/D (DFFHQX8TS)         3.56 f            1.76        -1.79
+accum_reg_23_/D (DFFHQX4TS)         3.57 r            1.78        -1.79
+accum_reg_27_/D (DFFHQX4TS)         3.55 f            1.77        -1.78
+y_reg_13_/D (DFFQX1TS)              3.46 f            1.67        -1.78
+accum_reg_18_/D (DFFHQX2TS)         3.55 r            1.77        -1.78
+y_reg_18_/D (DFFHQX8TS)             3.53 f            1.76        -1.77
+accum_reg_13_/D (DFFHQX4TS)         3.49 r            1.80        -1.69
+accum_reg_17_/D (DFFHQX8TS)         3.44 f            1.77        -1.68
+y_reg_14_/D (DFFQX1TS)              3.35 f            1.67        -1.68
+y_reg_12_/D (DFFQX1TS)              3.33 f            1.67        -1.66
+y_reg_11_/D (DFFQX1TS)              3.32 f            1.67        -1.65
+y_reg_10_/D (DFFQX1TS)              3.29 f            1.67        -1.61
+accum_reg_14_/D (DFFHQX4TS)         3.41 r            1.80        -1.61
+y_reg_9_/D (DFFQX1TS)               3.28 f            1.67        -1.60
+accum_reg_11_/D (DFFHQX2TS)         3.29 f            1.70        -1.59
+accum_reg_12_/D (DFFHQX4TS)         3.35 r            1.78        -1.57
+accum_reg_10_/D (DFFHQX4TS)         3.32 r            1.78        -1.54
+accum_reg_9_/D (DFFHQX4TS)          3.30 r            1.78        -1.52
+y_reg_8_/D (DFFQX1TS)               3.07 f            1.67        -1.40
+y_reg_7_/D (DFFQX1TS)               3.05 f            1.67        -1.38
+accum_reg_8_/D (DFFHQX4TS)          3.09 r            1.78        -1.31
+accum_reg_7_/D (DFFHQX4TS)          3.03 f            1.75        -1.28
+y_reg_6_/D (DFFQX1TS)               2.93 f            1.67        -1.26
+accum_reg_6_/D (DFFHQX4TS)          2.94 r            1.78        -1.16
+accum_reg_5_/D (DFFHQX4TS)          2.84 r            1.78        -1.06
+y_reg_5_/D (DFFHQX4TS)              2.83 r            1.79        -1.04
+y_reg_4_/D (DFFQX1TS)               2.50 f            1.67        -0.83
+accum_reg_4_/D (DFFHQX4TS)          2.53 r            1.78        -0.75
+y_reg_3_/D (DFFQX1TS)               2.32 f            1.67        -0.65
+accum_reg_3_/D (DFFHQX4TS)          2.34 r            1.78        -0.57
+y_reg_2_/D (DFFQX1TS)               2.12 f            1.67        -0.44
+accum_reg_2_/D (DFFHQX4TS)          2.10 r            1.78        -0.32
+y_reg_1_/D (DFFQX1TS)               1.78 f            1.67        -0.11
+accum_reg_1_/D (DFFQX1TS)           1.75 f            1.68        -0.07
+accum_reg_0_/D (DFFQX1TS)           1.70 f            1.69        -0.01
+y_reg_0_/D (DFFQX1TS)               1.67 r            1.70         0.02
+tick_reg/D (DFFQX1TS)               1.26 f            1.65         0.39
+counter_reg_5_/D (DFFHQX1TS)        1.01 r            1.70         0.69
+counter_reg_3_/D (DFFHQX2TS)        1.01 r            1.71         0.70
+counter_reg_4_/D (DFFHQX1TS)        0.94 f            1.71         0.77
+counter_reg_2_/D (DFFHQX2TS)        0.88 f            1.69         0.82
+counter_reg_1_/D (DFFHQX2TS)        0.80 f            1.70         0.90
+counter_reg_0_/D (DFFHQX2TS)        0.76 r            1.74         0.98
+y[12] (out)                         0.74 f            1.95         1.21
+y[17] (out)                         0.73 f            1.95         1.22
+y[15] (out)                         0.73 f            1.95         1.22
+y[11] (out)                         0.73 f            1.95         1.22
+y[7] (out)                          0.73 f            1.95         1.22
+y[4] (out)                          0.73 f            1.95         1.22
+y[3] (out)                          0.73 f            1.95         1.22
+y[1] (out)                          0.73 f            1.95         1.22
+y[0] (out)                          0.73 f            1.95         1.22
+y[14] (out)                         0.72 f            1.95         1.23
+y[13] (out)                         0.72 f            1.95         1.23
+y[10] (out)                         0.72 f            1.95         1.23
+y[9] (out)                          0.72 f            1.95         1.23
+y[8] (out)                          0.72 f            1.95         1.23
+y[6] (out)                          0.72 f            1.95         1.23
+y[2] (out)                          0.72 f            1.95         1.23
+tick (out)                          0.72 f            1.95         1.23
+y[31] (out)                         0.33 f            1.95         1.62
+y[29] (out)                         0.33 f            1.95         1.62
+y[28] (out)                         0.33 f            1.95         1.62
+y[27] (out)                         0.33 f            1.95         1.62
+y[26] (out)                         0.33 f            1.95         1.62
+y[25] (out)                         0.33 f            1.95         1.62
+y[24] (out)                         0.33 f            1.95         1.62
+y[22] (out)                         0.33 f            1.95         1.62
+y[21] (out)                         0.33 f            1.95         1.62
+y[18] (out)                         0.33 f            1.95         1.62
+y[30] (out)                         0.29 f            1.95         1.66
+y[23] (out)                         0.29 f            1.95         1.66
+y[20] (out)                         0.29 f            1.95         1.66
+y[19] (out)                         0.29 f            1.95         1.66
+y[16] (out)                         0.29 f            1.95         1.66
+y[5] (out)                          0.28 f            1.95         1.67
+
+1

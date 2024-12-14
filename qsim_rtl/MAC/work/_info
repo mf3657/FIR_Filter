@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/user/stud/fall24/mf3657/ald/FIR_Filter/qsim_rtl/MAC
+vMAC
+2../../rtl/MAC/MAC.v
+Z1 !s110 1731903586
+!i10b 1
+!s100 n79;DmVIOC0lA:PgSI^IP1
+I^:E_GK=b]N@YF3[]aV4Z52
+R0
+w1731901894
+8../../rtl/MAC/MAC.v
+F../../rtl/MAC/MAC.v
+!i122 0
+L0 1 47
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OP;L;2024.2;79
+r1
+!s85 0
+31
+!s108 1731903585.000000
+!s107 ../../rtl/MAC/MAC.v|
+!s90 -reportprogress|300|+acc|-incr|../../rtl/MAC/MAC.v|
+!i113 1
+Z4 o+acc
+Z5 tCvgOpt 0
+n@m@a@c
+vMAC_TB
+2MAC_TB.v
+R1
+!i10b 1
+!s100 E3a6PS1J3i>>B<oB]zZ^V3
+IGJ_f1:[<S9E7CzMLjhfl50
+R0
+w1731900036
+8MAC_TB.v
+FMAC_TB.v
+!i122 1
+L0 6 62
+R2
+R3
+r1
+!s85 0
+31
+!s108 1731903586.000000
+!s107 MAC_TB.v|
+!s90 -reportprogress|300|+acc|-incr|MAC_TB.v|
+!i113 1
+R4
+R5
+n@m@a@c_@t@b

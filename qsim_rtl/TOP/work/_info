@@ -1,0 +1,179 @@
+m255
+K4
+z2
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/user/stud/fall24/mf3657/ald/FIR_Filter/qsim_rtl/TOP
+vCMEM
+2../../rtl/mem_comp/CMEM.v
+Z1 !s110 1734129775
+!i10b 1
+!s100 lhO]UI>]0IYPXLo@WfQ?U1
+I@5HOhf86<IJQNTMB90<CP2
+R0
+w1732233095
+8../../rtl/mem_comp/CMEM.v
+F../../rtl/mem_comp/CMEM.v
+!i122 3
+Z2 L0 53 1184
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OP;L;2024.2;79
+r1
+!s85 0
+31
+Z5 !s108 1734129775.000000
+!s107 ../../rtl/mem_comp/CMEM.v|
+!s90 -reportprogress|300|+acc|-incr|../../rtl/mem_comp/CMEM.v|
+!i113 1
+Z6 o+acc
+Z7 tCvgOpt 0
+n@c@m@e@m
+vFIFO
+2../../rtl/FIFO/FIFO.v
+Z8 !s110 1734129776
+!i10b 1
+!s100 Xb3o>fz3C^EZPbBBQn76S2
+IZBaTi?<h`fPk<ND`kdi[`0
+R0
+w1733340682
+8../../rtl/FIFO/FIFO.v
+F../../rtl/FIFO/FIFO.v
+!i122 5
+L0 1 42
+R3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1734129776.000000
+!s107 ../../rtl/FIFO/FIFO.v|
+!s90 -reportprogress|300|+acc|-incr|../../rtl/FIFO/FIFO.v|
+!i113 1
+R6
+R7
+n@f@i@f@o
+vIMEM
+2../../rtl/mem_comp/IMEM.v
+R1
+!i10b 1
+!s100 eB3AOQP>Ido6]gI8SQUDi0
+I@TDU8XKJ>e?^0:]<:AzC13
+R0
+w1732233114
+8../../rtl/mem_comp/IMEM.v
+F../../rtl/mem_comp/IMEM.v
+!i122 2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 ../../rtl/mem_comp/IMEM.v|
+!s90 -reportprogress|300|+acc|-incr|../../rtl/mem_comp/IMEM.v|
+!i113 1
+R6
+R7
+n@i@m@e@m
+vMAC
+2../../rtl/MAC/MAC.v
+R8
+!i10b 1
+!s100 n79;DmVIOC0lA:PgSI^IP1
+I^:E_GK=b]N@YF3[]aV4Z52
+R0
+w1731901894
+8../../rtl/MAC/MAC.v
+F../../rtl/MAC/MAC.v
+!i122 4
+L0 1 47
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 ../../rtl/MAC/MAC.v|
+!s90 -reportprogress|300|+acc|-incr|../../rtl/MAC/MAC.v|
+!i113 1
+R6
+R7
+n@m@a@c
+vMEM_top
+2../../rtl/mem_comp/MEM_top.v
+R1
+!i10b 1
+!s100 go]>lBg=>obdahCkEhL0B0
+ITRcg^KI>3>miMg:?8_;P30
+R0
+w1732417397
+8../../rtl/mem_comp/MEM_top.v
+F../../rtl/mem_comp/MEM_top.v
+!i122 1
+L0 2 60
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 ../../rtl/mem_comp/MEM_top.v|
+!s90 -reportprogress|300|+acc|-incr|../../rtl/mem_comp/MEM_top.v|
+!i113 1
+R6
+R7
+n@m@e@m_top
+vTOP
+2../../rtl/TOP/TOP.v
+R1
+!i10b 1
+!s100 67W9NLk@BL[48bC]<`1Bj1
+ISPQmQi6ozB]nQ=0kDCD7c0
+R0
+w1734129515
+8../../rtl/TOP/TOP.v
+F../../rtl/TOP/TOP.v
+!i122 0
+L0 3 117
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 ../../rtl/TOP/TOP.v|
+!s90 -reportprogress|300|+acc|-incr|../../rtl/TOP/TOP.v|
+!i113 1
+R6
+R7
+n@t@o@p
+vTOP_TB
+2TOP_TB.v
+R8
+!i10b 1
+!s100 a6HfKimA`R92C9>;`J0M]1
+IS5=;A6jGSL6=[]?_]gg2_0
+R0
+w1734129760
+8TOP_TB.v
+FTOP_TB.v
+!i122 6
+L0 3 96
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 TOP_TB.v|
+!s90 -reportprogress|300|+acc|-incr|TOP_TB.v|
+!i113 1
+R6
+R7
+n@t@o@p_@t@b

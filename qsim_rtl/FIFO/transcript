@@ -1,0 +1,380 @@
+# do runsim.do
+# Model Technology ModelSim DE vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
+# vmap work work 
+# Copying /tools/mentor/ModelSim/2024.2/modelsim_dlx/linuxpe/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:06:04 on Dec 04,2024
+# vlog -reportprogress 300 "+acc" -incr ../../rtl/FIFO/FIFO.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 14:06:04 on Dec 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:06:04 on Dec 04,2024
+# vlog -reportprogress 300 "+acc" -incr FIFO_tb.v 
+# -- Compiling module FIFO_tb
+# 
+# Top level modules:
+# 	FIFO_tb
+# End time: 14:06:04 on Dec 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ps -lib work FIFO_tb 
+# Start time: 14:06:04 on Dec 04,2024
+# //  ModelSim DE 2024.2 May 20 2024 Linux 4.18.0-553.27.1.el8_10.x86_64
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.FIFO_tb
+# Loading work.FIFO
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/FIFO_tb.uut0/FIFO_COUNT'.
+# Executing ONERROR command at macro ./waveformat.do line 14
+# Time = 0 | wr_data = 0 | wr_en = 0 | rd_data = x | rd_en = 0 | full = 0 | empty = 1
+# Time = 50000 | wr_data = 1 | wr_en = 1 | rd_data = x | rd_en = 0 | full = 0 | empty = 1
+# Time = 150000 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 0 | full = 0 | empty = 0
+# Time = 150500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 151500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 154500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 155500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 158500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 159500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 162500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 163500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 166500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 167500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 170500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 171500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 174500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 175500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 178500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 179500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 182500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 183500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 186500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 187500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 190500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 191500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 194500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 195500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 198500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 199500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 202500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 203500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 206500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 207500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 210500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 211500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 214500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 215500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 218500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 219500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 222500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 223500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 226500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 227500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 230500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 231500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 234500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 235500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 238500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 239500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 242500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 243500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 246500 | wr_data = 2 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 247500 | wr_data = 2 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 250000 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 250500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 251500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 252500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 254500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 255500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 256500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 258500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 259500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 260500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 262500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 263500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 264500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 266500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 267500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 268500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 270500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 271500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 272500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 274500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 275500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 276500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 278500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 279500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 280500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 282500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 283500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 284500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 286500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 287500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 288500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 290500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 291500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 292500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 294500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 295500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 296500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 298500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 299500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 300500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 302500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 303500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 304500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 306500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 307500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 308500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 310500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 311500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 312500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 314500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 315500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 316500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 318500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 319500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 320500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 322500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 323500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 324500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 326500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 327500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 328500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 330500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 331500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 332500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 334500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 335500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 336500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 338500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 339500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 340500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 342500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 343500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 344500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 346500 | wr_data = 3 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 347500 | wr_data = 3 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 348500 | wr_data = 3 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 350000 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 350500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 351500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 352500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 353500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 354500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 355500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 356500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 357500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 358500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 359500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 360500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 361500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 362500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 363500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 364500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 365500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 366500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 367500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 368500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 369500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 370500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 371500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 372500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 373500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 374500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 375500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 376500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 377500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 378500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 379500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 380500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 381500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 382500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 383500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 384500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 385500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 386500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 387500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 388500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 389500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 390500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 391500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 392500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 393500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 394500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 395500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 396500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 397500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 398500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 399500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 400500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 401500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 402500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 403500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 404500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 405500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 406500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 407500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 408500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 409500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 410500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 411500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 412500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 413500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 414500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 415500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 416500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 417500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 418500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 419500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 420500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 421500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 422500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 423500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 424500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 425500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 426500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 427500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 428500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 429500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 430500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 431500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 432500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 433500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 434500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 435500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 436500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 437500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 438500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 439500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 440500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 441500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 442500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 443500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 444500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 445500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 446500 | wr_data = 4 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 0 | empty = 0
+# Time = 447500 | wr_data = 4 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 0 | empty = 0
+# Time = 448500 | wr_data = 4 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 0 | empty = 0
+# Time = 449500 | wr_data = 4 | wr_en = 1 | rd_data = x | rd_en = 1 | full = 0 | empty = 0
+# Time = 450000 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 450500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 451500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 452500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 453500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 454500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 455500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 456500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 457500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 458500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 459500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 460500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 461500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 462500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 463500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 464500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 465500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 466500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 467500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 468500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 469500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 470500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 471500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 472500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 473500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 474500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 475500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 476500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 477500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 478500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 479500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 480500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 481500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 482500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 483500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 484500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 485500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 486500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 487500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 488500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 489500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 490500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 491500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 492500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 493500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 494500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 495500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 496500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 497500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 498500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 499500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 500500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 501500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 502500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 503500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 504500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 505500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 506500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 507500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 508500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 509500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 510500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 511500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 512500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 513500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 514500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 515500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 516500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 517500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 518500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 519500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 520500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 521500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 522500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 523500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 524500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 525500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 526500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 527500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 528500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 529500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 530500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 531500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 532500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 533500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 534500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 535500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 536500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 537500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 538500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 539500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 540500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 541500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 542500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 543500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 544500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 545500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 546500 | wr_data = 5 | wr_en = 1 | rd_data = 1 | rd_en = 1 | full = 1 | empty = 0
+# Time = 547500 | wr_data = 5 | wr_en = 1 | rd_data = 2 | rd_en = 1 | full = 1 | empty = 0
+# Time = 548500 | wr_data = 5 | wr_en = 1 | rd_data = 3 | rd_en = 1 | full = 1 | empty = 0
+# Time = 549500 | wr_data = 5 | wr_en = 1 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 550000 | wr_data = 5 | wr_en = 0 | rd_data = 4 | rd_en = 1 | full = 1 | empty = 0
+# Time = 550500 | wr_data = 5 | wr_en = 0 | rd_data = 1 | rd_en = 0 | full = 1 | empty = 0
+# ** Note: $stop    : FIFO_tb.v(62)
+#    Time: 552500 ps  Iteration: 0  Instance: /FIFO_tb
+# Break in Module FIFO_tb at FIFO_tb.v line 62
+# End time: 14:06:35 on Dec 04,2024, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0

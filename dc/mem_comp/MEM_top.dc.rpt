@@ -1,0 +1,1251 @@
+1
+ 
+****************************************
+Report : area
+Design : MEM_top
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 22:14:14 2024
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+    USERLIB (File: /homes/user/stud/fall24/mf3657/ald/FIR_Filter/dc/mem_comp_db/db_CMEM/CMEM_tt_1p2v_25c_syn.db)
+    USERLIB (File: /homes/user/stud/fall24/mf3657/ald/FIR_Filter/dc/mem_comp_db/db_IMEM/IMEM_tt_1p2v_25c_syn.db)
+
+Number of ports:                           79
+Number of nets:                            94
+Number of cells:                           17
+Number of combinational cells:             14
+Number of sequential cells:                 0
+Number of macros/black boxes:               2
+Number of buf/inv:                         13
+Number of references:                       5
+
+Combinational area:                 79.200003
+Buf/Inv area:                       73.440003
+Noncombinational area:               0.000000
+Macro/Black Box area:            25342.771484
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 25421.971488
+Total area:                 undefined
+1
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : MEM_top
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 22:14:14 2024
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+    USERLIB (File: /homes/user/stud/fall24/mf3657/ald/FIR_Filter/dc/mem_comp_db/db_CMEM/CMEM_tt_1p2v_25c_syn.db)
+    USERLIB (File: /homes/user/stud/fall24/mf3657/ald/FIR_Filter/dc/mem_comp_db/db_IMEM/IMEM_tt_1p2v_25c_syn.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+MEM_top                                1.27e-02   10.574 6.43e+04   10.586 100.0
+1
+ 
+****************************************
+Report : design
+Design : MEM_top
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 22:14:14 2024
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+    USERLIB (File: /homes/user/stud/fall24/mf3657/ald/FIR_Filter/dc/mem_comp_db/db_CMEM/CMEM_tt_1p2v_25c_syn.db)
+    USERLIB (File: /homes/user/stud/fall24/mf3657/ald/FIR_Filter/dc/mem_comp_db/db_IMEM/IMEM_tt_1p2v_25c_syn.db)
+
+Local Link Library:
+
+    {/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : tt_1p2v_25c
+    Library : scx3_cmos8rf_lpvt_tt_1p2v_25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : MEM_top
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 22:14:14 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    d - dont_touch
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+CMEM                      CMEM            USERLIB         12671.385742
+                                                                    b, d
+IMEM                      IMEM            USERLIB         12671.385742
+                                                                    b, d
+U5                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U6                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U7                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U8                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U9                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U10                       CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U11                       CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U12                       CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U13                       CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U14                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U15                       CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U16                       CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U17                       CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U18                       NOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+--------------------------------------------------------------------------------
+Total 16 cells                                            25421.971488
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : MEM_top
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 22:14:14 2024
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+    i - ideal_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+caddr[0]       in      0.0000   0.0000    1.02    0.00   --         
+caddr[1]       in      0.0000   0.0000    1.02    0.00   --         
+caddr[2]       in      0.0000   0.0000    1.02    0.00   --         
+caddr[3]       in      0.0000   0.0000    1.02    0.00   --         
+caddr[4]       in      0.0000   0.0000    1.02    0.00   --         
+caddr[5]       in      0.0000   0.0000    1.02    0.00   --         
+cin[0]         in      0.0000   0.0000    1.02    0.00   --         
+cin[1]         in      0.0000   0.0000    1.02    0.00   --         
+cin[2]         in      0.0000   0.0000    1.02    0.00   --         
+cin[3]         in      0.0000   0.0000    1.02    0.00   --         
+cin[4]         in      0.0000   0.0000    1.02    0.00   --         
+cin[5]         in      0.0000   0.0000    1.02    0.00   --         
+cin[6]         in      0.0000   0.0000    1.02    0.00   --         
+cin[7]         in      0.0000   0.0000    1.02    0.00   --         
+cin[8]         in      0.0000   0.0000    1.02    0.00   --         
+cin[9]         in      0.0000   0.0000    1.02    0.00   --         
+cin[10]        in      0.0000   0.0000    1.02    0.00   --         
+cin[11]        in      0.0000   0.0000    1.02    0.00   --         
+cin[12]        in      0.0000   0.0000    1.02    0.00   --         
+cin[13]        in      0.0000   0.0000    1.02    0.00   --         
+cin[14]        in      0.0000   0.0000    1.02    0.00   --         
+cin[15]        in      0.0000   0.0000    1.02    0.00   --         
+clk            in      0.0000   0.0000    1.02    0.00   --         d, i
+cload          in      0.0000   0.0000    1.02    0.00   --         
+xaddr[0]       in      0.0000   0.0000    1.02    0.00   --         
+xaddr[1]       in      0.0000   0.0000    1.02    0.00   --         
+xaddr[2]       in      0.0000   0.0000    1.02    0.00   --         
+xaddr[3]       in      0.0000   0.0000    1.02    0.00   --         
+xaddr[4]       in      0.0000   0.0000    1.02    0.00   --         
+xaddr[5]       in      0.0000   0.0000    1.02    0.00   --         
+xin[0]         in      0.0000   0.0000    1.02    0.00   --         
+xin[1]         in      0.0000   0.0000    1.02    0.00   --         
+xin[2]         in      0.0000   0.0000    1.02    0.00   --         
+xin[3]         in      0.0000   0.0000    1.02    0.00   --         
+xin[4]         in      0.0000   0.0000    1.02    0.00   --         
+xin[5]         in      0.0000   0.0000    1.02    0.00   --         
+xin[6]         in      0.0000   0.0000    1.02    0.00   --         
+xin[7]         in      0.0000   0.0000    1.02    0.00   --         
+xin[8]         in      0.0000   0.0000    1.02    0.00   --         
+xin[9]         in      0.0000   0.0000    1.02    0.00   --         
+xin[10]        in      0.0000   0.0000    1.02    0.00   --         
+xin[11]        in      0.0000   0.0000    1.02    0.00   --         
+xin[12]        in      0.0000   0.0000    1.02    0.00   --         
+xin[13]        in      0.0000   0.0000    1.02    0.00   --         
+xin[14]        in      0.0000   0.0000    1.02    0.00   --         
+xin[15]        in      0.0000   0.0000    1.02    0.00   --         
+xload          in      0.0000   0.0000    1.02    0.00   --         
+coeffCurr[0]   out     0.0050   0.0000   --      --      --         
+coeffCurr[1]   out     0.0050   0.0000   --      --      --         
+coeffCurr[2]   out     0.0050   0.0000   --      --      --         
+coeffCurr[3]   out     0.0050   0.0000   --      --      --         
+coeffCurr[4]   out     0.0050   0.0000   --      --      --         
+coeffCurr[5]   out     0.0050   0.0000   --      --      --         
+coeffCurr[6]   out     0.0050   0.0000   --      --      --         
+coeffCurr[7]   out     0.0050   0.0000   --      --      --         
+coeffCurr[8]   out     0.0050   0.0000   --      --      --         
+coeffCurr[9]   out     0.0050   0.0000   --      --      --         
+coeffCurr[10]  out     0.0050   0.0000   --      --      --         
+coeffCurr[11]  out     0.0050   0.0000   --      --      --         
+coeffCurr[12]  out     0.0050   0.0000   --      --      --         
+coeffCurr[13]  out     0.0050   0.0000   --      --      --         
+coeffCurr[14]  out     0.0050   0.0000   --      --      --         
+coeffCurr[15]  out     0.0050   0.0000   --      --      --         
+xCurr[0]       out     0.0050   0.0000   --      --      --         
+xCurr[1]       out     0.0050   0.0000   --      --      --         
+xCurr[2]       out     0.0050   0.0000   --      --      --         
+xCurr[3]       out     0.0050   0.0000   --      --      --         
+xCurr[4]       out     0.0050   0.0000   --      --      --         
+xCurr[5]       out     0.0050   0.0000   --      --      --         
+xCurr[6]       out     0.0050   0.0000   --      --      --         
+xCurr[7]       out     0.0050   0.0000   --      --      --         
+xCurr[8]       out     0.0050   0.0000   --      --      --         
+xCurr[9]       out     0.0050   0.0000   --      --      --         
+xCurr[10]      out     0.0050   0.0000   --      --      --         
+xCurr[11]      out     0.0050   0.0000   --      --      --         
+xCurr[12]      out     0.0050   0.0000   --      --      --         
+xCurr[13]      out     0.0050   0.0000   --      --      --         
+xCurr[14]      out     0.0050   0.0000   --      --      --         
+xCurr[15]      out     0.0050   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+caddr[0]           1      --              --              --        -- 
+caddr[1]           1      --              --              --        -- 
+caddr[2]           1      --              --              --        -- 
+caddr[3]           1      --              --              --        -- 
+caddr[4]           1      --              --              --        -- 
+caddr[5]           1      --              --              --        -- 
+cin[0]             1      --              --              --        -- 
+cin[1]             1      --              --              --        -- 
+cin[2]             1      --              --              --        -- 
+cin[3]             1      --              --              --        -- 
+cin[4]             1      --              --              --        -- 
+cin[5]             1      --              --              --        -- 
+cin[6]             1      --              --              --        -- 
+cin[7]             1      --              --              --        -- 
+cin[8]             1      --              --              --        -- 
+cin[9]             1      --              --              --        -- 
+cin[10]            1      --              --              --        -- 
+cin[11]            1      --              --              --        -- 
+cin[12]            1      --              --              --        -- 
+cin[13]            1      --              --              --        -- 
+cin[14]            1      --              --              --        -- 
+cin[15]            1      --              --              --        -- 
+clk                1      --              --              --        -- 
+cload              1      --              --              --        -- 
+xaddr[0]           1      --              --              --        -- 
+xaddr[1]           1      --              --              --        -- 
+xaddr[2]           1      --              --              --        -- 
+xaddr[3]           1      --              --              --        -- 
+xaddr[4]           1      --              --              --        -- 
+xaddr[5]           1      --              --              --        -- 
+xin[0]             1      --              --              --        -- 
+xin[1]             1      --              --              --        -- 
+xin[2]             1      --              --              --        -- 
+xin[3]             1      --              --              --        -- 
+xin[4]             1      --              --              --        -- 
+xin[5]             1      --              --              --        -- 
+xin[6]             1      --              --              --        -- 
+xin[7]             1      --              --              --        -- 
+xin[8]             1      --              --              --        -- 
+xin[9]             1      --              --              --        -- 
+xin[10]            1      --              --              --        -- 
+xin[11]            1      --              --              --        -- 
+xin[12]            1      --              --              --        -- 
+xin[13]            1      --              --              --        -- 
+xin[14]            1      --              --              --        -- 
+xin[15]            1      --              --              --        -- 
+xload              1      --              --              --        -- 
+coeffCurr[0]       1      --              --              --        -- 
+coeffCurr[1]       1      --              --              --        -- 
+coeffCurr[2]       1      --              --              --        -- 
+coeffCurr[3]       1      --              --              --        -- 
+coeffCurr[4]       1      --              --              --        -- 
+coeffCurr[5]       1      --              --              --        -- 
+coeffCurr[6]       1      --              --              --        -- 
+coeffCurr[7]       1      --              --              --        -- 
+coeffCurr[8]       1      --              --              --        -- 
+coeffCurr[9]       1      --              --              --        -- 
+coeffCurr[10]      1      --              --              --        -- 
+coeffCurr[11]      1      --              --              --        -- 
+coeffCurr[12]      1      --              --              --        -- 
+coeffCurr[13]      1      --              --              --        -- 
+coeffCurr[14]      1      --              --              --        -- 
+coeffCurr[15]      1      --              --              --        -- 
+xCurr[0]           1      --              --              --        -- 
+xCurr[1]           1      --              --              --        -- 
+xCurr[2]           1      --              --              --        -- 
+xCurr[3]           1      --              --              --        -- 
+xCurr[4]           1      --              --              --        -- 
+xCurr[5]           1      --              --              --        -- 
+xCurr[6]           1      --              --              --        -- 
+xCurr[7]           1      --              --              --        -- 
+xCurr[8]           1      --              --              --        -- 
+xCurr[9]           1      --              --              --        -- 
+xCurr[10]          1      --              --              --        -- 
+xCurr[11]          1      --              --              --        -- 
+xCurr[12]          1      --              --              --        -- 
+xCurr[13]          1      --              --              --        -- 
+xCurr[14]          1      --              --              --        -- 
+xCurr[15]          1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+caddr[0]      0.05    0.05    0.05    0.05  clk       4.00  
+caddr[1]      0.05    0.05    0.05    0.05  clk       4.00  
+caddr[2]      0.05    0.05    0.05    0.05  clk       4.00  
+caddr[3]      0.05    0.05    0.05    0.05  clk       4.00  
+caddr[4]      0.05    0.05    0.05    0.05  clk       4.00  
+caddr[5]      0.05    0.05    0.05    0.05  clk       4.00  
+cin[0]        0.05    0.05    0.05    0.05  clk       4.00  
+cin[1]        0.05    0.05    0.05    0.05  clk       4.00  
+cin[2]        0.05    0.05    0.05    0.05  clk       4.00  
+cin[3]        0.05    0.05    0.05    0.05  clk       4.00  
+cin[4]        0.05    0.05    0.05    0.05  clk       4.00  
+cin[5]        0.05    0.05    0.05    0.05  clk       4.00  
+cin[6]        0.05    0.05    0.05    0.05  clk       4.00  
+cin[7]        0.05    0.05    0.05    0.05  clk       4.00  
+cin[8]        0.05    0.05    0.05    0.05  clk       4.00  
+cin[9]        0.05    0.05    0.05    0.05  clk       4.00  
+cin[10]       0.05    0.05    0.05    0.05  clk       4.00  
+cin[11]       0.05    0.05    0.05    0.05  clk       4.00  
+cin[12]       0.05    0.05    0.05    0.05  clk       4.00  
+cin[13]       0.05    0.05    0.05    0.05  clk       4.00  
+cin[14]       0.05    0.05    0.05    0.05  clk       4.00  
+cin[15]       0.05    0.05    0.05    0.05  clk       4.00  
+clk           --      --      --      --      --      4.00
+cload         0.05    0.05    0.05    0.05  clk       4.00  
+xaddr[0]      0.05    0.05    0.05    0.05  clk       4.00  
+xaddr[1]      0.05    0.05    0.05    0.05  clk       4.00  
+xaddr[2]      0.05    0.05    0.05    0.05  clk       4.00  
+xaddr[3]      0.05    0.05    0.05    0.05  clk       4.00  
+xaddr[4]      0.05    0.05    0.05    0.05  clk       4.00  
+xaddr[5]      0.05    0.05    0.05    0.05  clk       4.00  
+xin[0]        0.05    0.05    0.05    0.05  clk       4.00  
+xin[1]        0.05    0.05    0.05    0.05  clk       4.00  
+xin[2]        0.05    0.05    0.05    0.05  clk       4.00  
+xin[3]        0.05    0.05    0.05    0.05  clk       4.00  
+xin[4]        0.05    0.05    0.05    0.05  clk       4.00  
+xin[5]        0.05    0.05    0.05    0.05  clk       4.00  
+xin[6]        0.05    0.05    0.05    0.05  clk       4.00  
+xin[7]        0.05    0.05    0.05    0.05  clk       4.00  
+xin[8]        0.05    0.05    0.05    0.05  clk       4.00  
+xin[9]        0.05    0.05    0.05    0.05  clk       4.00  
+xin[10]       0.05    0.05    0.05    0.05  clk       4.00  
+xin[11]       0.05    0.05    0.05    0.05  clk       4.00  
+xin[12]       0.05    0.05    0.05    0.05  clk       4.00  
+xin[13]       0.05    0.05    0.05    0.05  clk       4.00  
+xin[14]       0.05    0.05    0.05    0.05  clk       4.00  
+xin[15]       0.05    0.05    0.05    0.05  clk       4.00  
+xload         0.05    0.05    0.05    0.05  clk       4.00  
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+caddr[0]     INVX1TS            INVX1TS              -- /  --     
+caddr[1]     INVX1TS            INVX1TS              -- /  --     
+caddr[2]     INVX1TS            INVX1TS              -- /  --     
+caddr[3]     INVX1TS            INVX1TS              -- /  --     
+caddr[4]     INVX1TS            INVX1TS              -- /  --     
+caddr[5]     INVX1TS            INVX1TS              -- /  --     
+cin[0]       INVX1TS            INVX1TS              -- /  --     
+cin[1]       INVX1TS            INVX1TS              -- /  --     
+cin[2]       INVX1TS            INVX1TS              -- /  --     
+cin[3]       INVX1TS            INVX1TS              -- /  --     
+cin[4]       INVX1TS            INVX1TS              -- /  --     
+cin[5]       INVX1TS            INVX1TS              -- /  --     
+cin[6]       INVX1TS            INVX1TS              -- /  --     
+cin[7]       INVX1TS            INVX1TS              -- /  --     
+cin[8]       INVX1TS            INVX1TS              -- /  --     
+cin[9]       INVX1TS            INVX1TS              -- /  --     
+cin[10]      INVX1TS            INVX1TS              -- /  --     
+cin[11]      INVX1TS            INVX1TS              -- /  --     
+cin[12]      INVX1TS            INVX1TS              -- /  --     
+cin[13]      INVX1TS            INVX1TS              -- /  --     
+cin[14]      INVX1TS            INVX1TS              -- /  --     
+cin[15]      INVX1TS            INVX1TS              -- /  --     
+clk          INVX1TS            INVX1TS              -- /  --     
+cload        INVX1TS            INVX1TS              -- /  --     
+xaddr[0]     INVX1TS            INVX1TS              -- /  --     
+xaddr[1]     INVX1TS            INVX1TS              -- /  --     
+xaddr[2]     INVX1TS            INVX1TS              -- /  --     
+xaddr[3]     INVX1TS            INVX1TS              -- /  --     
+xaddr[4]     INVX1TS            INVX1TS              -- /  --     
+xaddr[5]     INVX1TS            INVX1TS              -- /  --     
+xin[0]       INVX1TS            INVX1TS              -- /  --     
+xin[1]       INVX1TS            INVX1TS              -- /  --     
+xin[2]       INVX1TS            INVX1TS              -- /  --     
+xin[3]       INVX1TS            INVX1TS              -- /  --     
+xin[4]       INVX1TS            INVX1TS              -- /  --     
+xin[5]       INVX1TS            INVX1TS              -- /  --     
+xin[6]       INVX1TS            INVX1TS              -- /  --     
+xin[7]       INVX1TS            INVX1TS              -- /  --     
+xin[8]       INVX1TS            INVX1TS              -- /  --     
+xin[9]       INVX1TS            INVX1TS              -- /  --     
+xin[10]      INVX1TS            INVX1TS              -- /  --     
+xin[11]      INVX1TS            INVX1TS              -- /  --     
+xin[12]      INVX1TS            INVX1TS              -- /  --     
+xin[13]      INVX1TS            INVX1TS              -- /  --     
+xin[14]      INVX1TS            INVX1TS              -- /  --     
+xin[15]      INVX1TS            INVX1TS              -- /  --     
+xload        INVX1TS            INVX1TS              -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+caddr[0]      --      --     --      --     --      --     --     --        -- 
+caddr[1]      --      --     --      --     --      --     --     --        -- 
+caddr[2]      --      --     --      --     --      --     --     --        -- 
+caddr[3]      --      --     --      --     --      --     --     --        -- 
+caddr[4]      --      --     --      --     --      --     --     --        -- 
+caddr[5]      --      --     --      --     --      --     --     --        -- 
+cin[0]        --      --     --      --     --      --     --     --        -- 
+cin[1]        --      --     --      --     --      --     --     --        -- 
+cin[2]        --      --     --      --     --      --     --     --        -- 
+cin[3]        --      --     --      --     --      --     --     --        -- 
+cin[4]        --      --     --      --     --      --     --     --        -- 
+cin[5]        --      --     --      --     --      --     --     --        -- 
+cin[6]        --      --     --      --     --      --     --     --        -- 
+cin[7]        --      --     --      --     --      --     --     --        -- 
+cin[8]        --      --     --      --     --      --     --     --        -- 
+cin[9]        --      --     --      --     --      --     --     --        -- 
+cin[10]       --      --     --      --     --      --     --     --        -- 
+cin[11]       --      --     --      --     --      --     --     --        -- 
+cin[12]       --      --     --      --     --      --     --     --        -- 
+cin[13]       --      --     --      --     --      --     --     --        -- 
+cin[14]       --      --     --      --     --      --     --     --        -- 
+cin[15]       --      --     --      --     --      --     --     --        -- 
+clk           --      --     --      --     --      --     --     --        -- 
+cload         --      --     --      --     --      --     --     --        -- 
+xaddr[0]      --      --     --      --     --      --     --     --        -- 
+xaddr[1]      --      --     --      --     --      --     --     --        -- 
+xaddr[2]      --      --     --      --     --      --     --     --        -- 
+xaddr[3]      --      --     --      --     --      --     --     --        -- 
+xaddr[4]      --      --     --      --     --      --     --     --        -- 
+xaddr[5]      --      --     --      --     --      --     --     --        -- 
+xin[0]        --      --     --      --     --      --     --     --        -- 
+xin[1]        --      --     --      --     --      --     --     --        -- 
+xin[2]        --      --     --      --     --      --     --     --        -- 
+xin[3]        --      --     --      --     --      --     --     --        -- 
+xin[4]        --      --     --      --     --      --     --     --        -- 
+xin[5]        --      --     --      --     --      --     --     --        -- 
+xin[6]        --      --     --      --     --      --     --     --        -- 
+xin[7]        --      --     --      --     --      --     --     --        -- 
+xin[8]        --      --     --      --     --      --     --     --        -- 
+xin[9]        --      --     --      --     --      --     --     --        -- 
+xin[10]       --      --     --      --     --      --     --     --        -- 
+xin[11]       --      --     --      --     --      --     --     --        -- 
+xin[12]       --      --     --      --     --      --     --     --        -- 
+xin[13]       --      --     --      --     --      --     --     --        -- 
+xin[14]       --      --     --      --     --      --     --     --        -- 
+xin[15]       --      --     --      --     --      --     --     --        -- 
+xload         --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+caddr[0]      --      --      --      -- 
+caddr[1]      --      --      --      -- 
+caddr[2]      --      --      --      -- 
+caddr[3]      --      --      --      -- 
+caddr[4]      --      --      --      -- 
+caddr[5]      --      --      --      -- 
+cin[0]        --      --      --      -- 
+cin[1]        --      --      --      -- 
+cin[2]        --      --      --      -- 
+cin[3]        --      --      --      -- 
+cin[4]        --      --      --      -- 
+cin[5]        --      --      --      -- 
+cin[6]        --      --      --      -- 
+cin[7]        --      --      --      -- 
+cin[8]        --      --      --      -- 
+cin[9]        --      --      --      -- 
+cin[10]       --      --      --      -- 
+cin[11]       --      --      --      -- 
+cin[12]       --      --      --      -- 
+cin[13]       --      --      --      -- 
+cin[14]       --      --      --      -- 
+cin[15]       --      --      --      -- 
+clk           --      --      --      -- 
+cload         --      --      --      -- 
+xaddr[0]      --      --      --      -- 
+xaddr[1]      --      --      --      -- 
+xaddr[2]      --      --      --      -- 
+xaddr[3]      --      --      --      -- 
+xaddr[4]      --      --      --      -- 
+xaddr[5]      --      --      --      -- 
+xin[0]        --      --      --      -- 
+xin[1]        --      --      --      -- 
+xin[2]        --      --      --      -- 
+xin[3]        --      --      --      -- 
+xin[4]        --      --      --      -- 
+xin[5]        --      --      --      -- 
+xin[6]        --      --      --      -- 
+xin[7]        --      --      --      -- 
+xin[8]        --      --      --      -- 
+xin[9]        --      --      --      -- 
+xin[10]       --      --      --      -- 
+xin[11]       --      --      --      -- 
+xin[12]       --      --      --      -- 
+xin[13]       --      --      --      -- 
+xin[14]       --      --      --      -- 
+xin[15]       --      --      --      -- 
+xload         --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+coeffCurr[0]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[1]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[2]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[3]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[4]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[5]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[6]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[7]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[8]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[9]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[10]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[11]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[12]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[13]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[14]
+              0.05    0.05    0.05    0.05  clk       0.00  
+coeffCurr[15]
+              0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[0]      0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[1]      0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[2]      0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[3]      0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[4]      0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[5]      0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[6]      0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[7]      0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[8]      0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[9]      0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[10]     0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[11]     0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[12]     0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[13]     0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[14]     0.05    0.05    0.05    0.05  clk       0.00  
+xCurr[15]     0.05    0.05    0.05    0.05  clk       0.00  
+
+1
+ 
+****************************************
+Report : compile_options
+Design : MEM_top
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 22:14:14 2024
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+MEM_top                                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         fix_multiple_port_nets feedthroughs
+                                                                constants
+                                                                outputs
+                                                                buffer_constants
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : MEM_top
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 22:14:14 2024
+****************************************
+
+
+    Design: MEM_top
+
+    max_area               0.00
+  - Current Area       25421.97
+  ------------------------------
+    Slack              -25421.97  (VIOLATED)
+
+
+    Pin: CMEM/CLK(high)
+
+    Period              2.00
+  - min_period          3.06
+  ------------------------------
+    Slack              -1.06 (VIOLATED)
+
+
+    Pin: CMEM/CLK(low)
+
+    Period              2.00
+  - min_period          3.06
+  ------------------------------
+    Slack              -1.06 (VIOLATED)
+
+
+    Pin: IMEM/CLK(high)
+
+    Period              2.00
+  - min_period          3.06
+  ------------------------------
+    Slack              -1.06 (VIOLATED)
+
+
+    Pin: IMEM/CLK(low)
+
+    Period              2.00
+  - min_period          3.06
+  ------------------------------
+    Slack              -1.06 (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : MEM_top
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 22:14:14 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: IMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: xCurr[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  IMEM/CLK (IMEM)                          0.00       0.00 r
+  IMEM/Q[3] (IMEM)                         1.53       1.53 r
+  xCurr[3] (out)                           0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: IMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: xCurr[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  IMEM/CLK (IMEM)                          0.00       0.00 r
+  IMEM/Q[2] (IMEM)                         1.53       1.53 r
+  xCurr[2] (out)                           0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: IMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: xCurr[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  IMEM/CLK (IMEM)                          0.00       0.00 r
+  IMEM/Q[1] (IMEM)                         1.53       1.53 r
+  xCurr[1] (out)                           0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: IMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: xCurr[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  IMEM/CLK (IMEM)                          0.00       0.00 r
+  IMEM/Q[0] (IMEM)                         1.53       1.53 r
+  xCurr[0] (out)                           0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[15]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[15] (CMEM)                        1.53       1.53 r
+  coeffCurr[15] (out)                      0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[14]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[14] (CMEM)                        1.53       1.53 r
+  coeffCurr[14] (out)                      0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[13]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[13] (CMEM)                        1.53       1.53 r
+  coeffCurr[13] (out)                      0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[12]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[12] (CMEM)                        1.53       1.53 r
+  coeffCurr[12] (out)                      0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[11]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[11] (CMEM)                        1.53       1.53 r
+  coeffCurr[11] (out)                      0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[10]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[10] (CMEM)                        1.53       1.53 r
+  coeffCurr[10] (out)                      0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[9]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[9] (CMEM)                         1.53       1.53 r
+  coeffCurr[9] (out)                       0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[8]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[8] (CMEM)                         1.53       1.53 r
+  coeffCurr[8] (out)                       0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[7]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[7] (CMEM)                         1.53       1.53 r
+  coeffCurr[7] (out)                       0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[6]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[6] (CMEM)                         1.53       1.53 r
+  coeffCurr[6] (out)                       0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[5]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[5] (CMEM)                         1.53       1.53 r
+  coeffCurr[5] (out)                       0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[4] (CMEM)                         1.53       1.53 r
+  coeffCurr[4] (out)                       0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[3] (CMEM)                         1.53       1.53 r
+  coeffCurr[3] (out)                       0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[2] (CMEM)                         1.53       1.53 r
+  coeffCurr[2] (out)                       0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[1] (CMEM)                         1.53       1.53 r
+  coeffCurr[1] (out)                       0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: CMEM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: coeffCurr[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CMEM/CLK (CMEM)                          0.00       0.00 r
+  CMEM/Q[0] (CMEM)                         1.53       1.53 r
+  coeffCurr[0] (out)                       0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+1

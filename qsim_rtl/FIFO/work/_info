@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/user/stud/fall24/mf3657/ald/FIR_Filter/qsim_rtl/FIFO
+vFIFO
+2../../rtl/FIFO/FIFO.v
+Z1 !s110 1733339164
+!i10b 1
+!s100 h5H]F0g3;0V8OzDhNX5Ed3
+I`d;MNZW:RRnb@[eOi:igd3
+R0
+w1733286816
+8../../rtl/FIFO/FIFO.v
+F../../rtl/FIFO/FIFO.v
+!i122 0
+L0 1 38
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OP;L;2024.2;79
+r1
+!s85 0
+31
+Z4 !s108 1733339164.000000
+!s107 ../../rtl/FIFO/FIFO.v|
+!s90 -reportprogress|300|+acc|-incr|../../rtl/FIFO/FIFO.v|
+!i113 1
+Z5 o+acc
+Z6 tCvgOpt 0
+n@f@i@f@o
+vFIFO_tb
+2FIFO_tb.v
+R1
+!i10b 1
+!s100 0>Yh441K7;bn2l[o0Kf;`1
+ID?ENiG8TckNgPQK]1aWE;2
+R0
+w1733272716
+8FIFO_tb.v
+FFIFO_tb.v
+!i122 1
+L0 1 70
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 FIFO_tb.v|
+!s90 -reportprogress|300|+acc|-incr|FIFO_tb.v|
+!i113 1
+R5
+R6
+n@f@i@f@o_tb

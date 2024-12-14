@@ -1,0 +1,2471 @@
+1
+ 
+****************************************
+Report : area
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                           39
+Number of nets:                           350
+Number of cells:                          324
+Number of combinational cells:            253
+Number of sequential cells:                71
+Number of macros/black boxes:               0
+Number of buf/inv:                        118
+Number of references:                      20
+
+Combinational area:               1745.280032
+Buf/Inv area:                      547.200022
+Noncombinational area:            2351.519924
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  4096.799956
+Total area:                 undefined
+1
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+FIFO                                   4.50e-05 1.07e-04 4.14e+03 1.56e-04 100.0
+1
+ 
+****************************************
+Report : design
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Local Link Library:
+
+    {/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : tt_1p2v_25c
+    Library : scx3_cmos8rf_lpvt_tt_1p2v_25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    DesignWare
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+FIFO_MEM_reg_0__0_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__1_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__2_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__3_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__4_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__5_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__6_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__7_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__8_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__9_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__10_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__11_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__12_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__13_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__14_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_0__15_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__0_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__1_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__2_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__3_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__4_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__5_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__6_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__7_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__8_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__9_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__10_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__11_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__12_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__13_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__14_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_1__15_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__0_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__1_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__2_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__3_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__4_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__5_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__6_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__7_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__8_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__9_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__10_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__11_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__12_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__13_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__14_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_2__15_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__0_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__1_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__2_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__3_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__4_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__5_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__6_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__7_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__8_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__9_        DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__10_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__11_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__12_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__13_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__14_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+FIFO_MEM_reg_3__15_       DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+U148                      OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U149                      OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U150                      OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U151                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U152                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U153                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U154                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U155                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U156                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U157                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U158                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U159                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U160                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U161                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U162                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U163                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U164                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U165                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U166                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U167                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U168                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U169                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U170                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U171                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U172                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U173                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U174                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U175                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U176                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U177                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U178                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U179                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U180                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U181                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U182                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U183                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U184                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U185                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U186                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U187                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U188                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U189                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U190                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U191                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U192                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U193                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U194                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U195                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U196                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U197                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U198                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U199                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U200                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U201                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U202                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U203                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U204                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U205                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U206                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U207                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U208                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U209                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U210                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U211                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U212                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U213                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U214                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U215                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U216                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U217                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U218                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U219                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U220                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U221                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U222                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U223                      AOI32X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U224                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U225                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U226                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U227                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U228                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U229                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U230                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U231                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U232                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U233                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U234                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U235                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U236                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U237                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U238                      OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U239                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U240                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U241                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U242                      OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U243                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U244                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U245                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U246                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U247                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U248                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U249                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U250                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U251                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U252                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U253                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U254                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U255                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U256                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U257                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U258                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U259                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U260                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U261                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U262                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U263                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U264                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U265                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U266                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U267                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U268                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U269                      NOR3BX1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U270                      NOR3XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U271                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U272                      CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U273                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U274                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U275                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U276                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U277                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U278                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U279                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U280                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U281                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U282                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U283                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U284                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U285                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U286                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U287                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U288                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U289                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U290                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U291                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U292                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U293                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U294                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U295                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U296                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U297                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U298                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U299                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U300                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U301                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U302                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U303                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U304                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U305                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U306                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U307                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U308                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U309                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U310                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U311                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U312                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U313                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U314                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U315                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U316                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U317                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U318                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U319                      AOI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U320                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U321                      NOR2BX1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U322                      AOI2BB2XLTS     scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U323                      NAND3XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U324                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U325                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U326                      INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U327                      NOR3XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U328                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U329                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U330                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U331                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U332                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U333                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U334                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U335                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U336                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U337                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U338                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U339                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U340                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U341                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U342                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U343                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U344                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U345                      NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U346                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U347                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U348                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U349                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U350                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U351                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U352                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U353                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U354                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U355                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U356                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U357                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U358                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U359                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U360                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U361                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U362                      NOR3XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U363                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U364                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U365                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U366                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U367                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U368                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U369                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U370                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U371                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U372                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U373                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U374                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U375                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U376                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U377                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U378                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U379                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U380                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U381                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U382                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U383                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U384                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U385                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U386                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U387                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U388                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U389                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U390                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U391                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U392                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U393                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U394                      AO22XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U395                      OA21XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U396                      AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U397                      NAND2BXLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U398                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U399                      NAND3BXLTS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U400                      XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+count_reg_0_              DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+count_reg_1_              DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+count_reg_2_              DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+rd_ptr_reg_0_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+rd_ptr_reg_1_             DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+wr_ptr_reg_0_             DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+wr_ptr_reg_1_             DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+--------------------------------------------------------------------------------
+Total 324 cells                                           4096.799956
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+    i - ideal_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk_rd         in      0.0000   0.0000   --       0.00   --         d, i
+clk_wr         in      0.0000   0.0000   --       0.00   --         d, i
+rd_en          in      0.0000   0.0000   --       0.00   --         
+rst            in      0.0000   0.0000   --       0.00   --         
+wr_data[0]     in      0.0000   0.0000   --       0.00   --         
+wr_data[1]     in      0.0000   0.0000   --       0.00   --         
+wr_data[2]     in      0.0000   0.0000   --       0.00   --         
+wr_data[3]     in      0.0000   0.0000   --       0.00   --         
+wr_data[4]     in      0.0000   0.0000   --       0.00   --         
+wr_data[5]     in      0.0000   0.0000   --       0.00   --         
+wr_data[6]     in      0.0000   0.0000   --       0.00   --         
+wr_data[7]     in      0.0000   0.0000   --       0.00   --         
+wr_data[8]     in      0.0000   0.0000   --       0.00   --         
+wr_data[9]     in      0.0000   0.0000   --       0.00   --         
+wr_data[10]    in      0.0000   0.0000   --       0.00   --         
+wr_data[11]    in      0.0000   0.0000   --       0.00   --         
+wr_data[12]    in      0.0000   0.0000   --       0.00   --         
+wr_data[13]    in      0.0000   0.0000   --       0.00   --         
+wr_data[14]    in      0.0000   0.0000   --       0.00   --         
+wr_data[15]    in      0.0000   0.0000   --       0.00   --         
+wr_en          in      0.0000   0.0000   --       0.00   --         
+empty          out     0.0050   0.0000   --      --      --         
+full           out     0.0050   0.0000   --      --      --         
+rd_data[0]     out     0.0050   0.0000   --      --      --         
+rd_data[1]     out     0.0050   0.0000   --      --      --         
+rd_data[2]     out     0.0050   0.0000   --      --      --         
+rd_data[3]     out     0.0050   0.0000   --      --      --         
+rd_data[4]     out     0.0050   0.0000   --      --      --         
+rd_data[5]     out     0.0050   0.0000   --      --      --         
+rd_data[6]     out     0.0050   0.0000   --      --      --         
+rd_data[7]     out     0.0050   0.0000   --      --      --         
+rd_data[8]     out     0.0050   0.0000   --      --      --         
+rd_data[9]     out     0.0050   0.0000   --      --      --         
+rd_data[10]    out     0.0050   0.0000   --      --      --         
+rd_data[11]    out     0.0050   0.0000   --      --      --         
+rd_data[12]    out     0.0050   0.0000   --      --      --         
+rd_data[13]    out     0.0050   0.0000   --      --      --         
+rd_data[14]    out     0.0050   0.0000   --      --      --         
+rd_data[15]    out     0.0050   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk_rd             1      --              --              --        -- 
+clk_wr             1      --              --              --        -- 
+rd_en              1      --              --              --        -- 
+rst                1      --              --              --        -- 
+wr_data[0]         1      --              --              --        -- 
+wr_data[1]         1      --              --              --        -- 
+wr_data[2]         1      --              --              --        -- 
+wr_data[3]         1      --              --              --        -- 
+wr_data[4]         1      --              --              --        -- 
+wr_data[5]         1      --              --              --        -- 
+wr_data[6]         1      --              --              --        -- 
+wr_data[7]         1      --              --              --        -- 
+wr_data[8]         1      --              --              --        -- 
+wr_data[9]         1      --              --              --        -- 
+wr_data[10]        1      --              --              --        -- 
+wr_data[11]        1      --              --              --        -- 
+wr_data[12]        1      --              --              --        -- 
+wr_data[13]        1      --              --              --        -- 
+wr_data[14]        1      --              --              --        -- 
+wr_data[15]        1      --              --              --        -- 
+wr_en              1      --              --              --        -- 
+empty              1      --              --              --        -- 
+full               1      --              --              --        -- 
+rd_data[0]         1      --              --              --        -- 
+rd_data[1]         1      --              --              --        -- 
+rd_data[2]         1      --              --              --        -- 
+rd_data[3]         1      --              --              --        -- 
+rd_data[4]         1      --              --              --        -- 
+rd_data[5]         1      --              --              --        -- 
+rd_data[6]         1      --              --              --        -- 
+rd_data[7]         1      --              --              --        -- 
+rd_data[8]         1      --              --              --        -- 
+rd_data[9]         1      --              --              --        -- 
+rd_data[10]        1      --              --              --        -- 
+rd_data[11]        1      --              --              --        -- 
+rd_data[12]        1      --              --              --        -- 
+rd_data[13]        1      --              --              --        -- 
+rd_data[14]        1      --              --              --        -- 
+rd_data[15]        1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk_rd        --      --      --      --      --      4.00
+clk_wr        0.10    0.10    0.10    0.10  clk_rd    4.00  
+rd_en         0.10    0.10    0.10    0.10  clk_rd    4.00  
+rst           0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[0]    0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[1]    0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[2]    0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[3]    0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[4]    0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[5]    0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[6]    0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[7]    0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[8]    0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[9]    0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[10]   0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[11]   0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[12]   0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[13]   0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[14]   0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_data[15]   0.10    0.10    0.10    0.10  clk_rd    4.00  
+wr_en         0.10    0.10    0.10    0.10  clk_rd    4.00  
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk_rd        --      --     --      --     --      --     --     --        -- 
+clk_wr        --      --     --      --     --      --     --     --        -- 
+rd_en         --      --     --      --     --      --     --     --        -- 
+rst           --      --     --      --     --      --     --     --        -- 
+wr_data[0]    --      --     --      --     --      --     --     --        -- 
+wr_data[1]    --      --     --      --     --      --     --     --        -- 
+wr_data[2]    --      --     --      --     --      --     --     --        -- 
+wr_data[3]    --      --     --      --     --      --     --     --        -- 
+wr_data[4]    --      --     --      --     --      --     --     --        -- 
+wr_data[5]    --      --     --      --     --      --     --     --        -- 
+wr_data[6]    --      --     --      --     --      --     --     --        -- 
+wr_data[7]    --      --     --      --     --      --     --     --        -- 
+wr_data[8]    --      --     --      --     --      --     --     --        -- 
+wr_data[9]    --      --     --      --     --      --     --     --        -- 
+wr_data[10]   --      --     --      --     --      --     --     --        -- 
+wr_data[11]   --      --     --      --     --      --     --     --        -- 
+wr_data[12]   --      --     --      --     --      --     --     --        -- 
+wr_data[13]   --      --     --      --     --      --     --     --        -- 
+wr_data[14]   --      --     --      --     --      --     --     --        -- 
+wr_data[15]   --      --     --      --     --      --     --     --        -- 
+wr_en         --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk_rd        --      --      --      -- 
+clk_wr        --      --      --      -- 
+rd_en         --      --      --      -- 
+rst           --      --      --      -- 
+wr_data[0]    --      --      --      -- 
+wr_data[1]    --      --      --      -- 
+wr_data[2]    --      --      --      -- 
+wr_data[3]    --      --      --      -- 
+wr_data[4]    --      --      --      -- 
+wr_data[5]    --      --      --      -- 
+wr_data[6]    --      --      --      -- 
+wr_data[7]    --      --      --      -- 
+wr_data[8]    --      --      --      -- 
+wr_data[9]    --      --      --      -- 
+wr_data[10]   --      --      --      -- 
+wr_data[11]   --      --      --      -- 
+wr_data[12]   --      --      --      -- 
+wr_data[13]   --      --      --      -- 
+wr_data[14]   --      --      --      -- 
+wr_data[15]   --      --      --      -- 
+wr_en         --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+empty         0.10    0.10    0.10    0.10  clk_rd    0.00  
+full          0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[0]    0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[1]    0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[2]    0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[3]    0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[4]    0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[5]    0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[6]    0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[7]    0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[8]    0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[9]    0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[10]   0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[11]   0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[12]   0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[13]   0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[14]   0.10    0.10    0.10    0.10  clk_rd    0.00  
+rd_data[15]   0.10    0.10    0.10    0.10  clk_rd    0.00  
+
+1
+ 
+****************************************
+Report : compile_options
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+FIFO                                     flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         fix_multiple_port_nets feedthroughs
+                                                                constants
+                                                                outputs
+                                                                buffer_constants
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+--------------------------------------------------------------------------------
+1
+Error: Cannot read file 'your_library.db'. (UID-58)
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+
+    Design: FIFO
+
+    max_area               0.00
+  - Current Area        4096.80
+  ------------------------------
+    Slack              -4096.80  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.55       1.43 r
+  U399/Y (NAND3BXLTS)                      0.41       1.84 r
+  U400/Y (XNOR2X1TS)                       0.25       2.09 r
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       2.09 r
+  data arrival time                                   2.09
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.48     999.52
+  data required time                                999.52
+  -----------------------------------------------------------
+  data required time                                999.52
+  data arrival time                                  -2.09
+  -----------------------------------------------------------
+  slack (MET)                                       997.43
+
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.55       1.43 r
+  U397/Y (NAND2BXLTS)                      0.40       1.82 r
+  U398/Y (XNOR2X1TS)                       0.24       2.06 r
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.00       2.06 r
+  data arrival time                                   2.06
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.48     999.52
+  data required time                                999.52
+  -----------------------------------------------------------
+  data required time                                999.52
+  data arrival time                                  -2.06
+  -----------------------------------------------------------
+  slack (MET)                                       997.46
+
+
+  Startpoint: count_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_2_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_2_/Q (DFFRXLTS)                0.84       0.84 f
+  U270/Y (NOR3XLTS)                        0.56       1.40 r
+  U399/Y (NAND3BXLTS)                      0.41       1.81 r
+  U400/Y (XNOR2X1TS)                       0.25       2.06 r
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       2.06 r
+  data arrival time                                   2.06
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.48     999.52
+  data required time                                999.52
+  -----------------------------------------------------------
+  data required time                                999.52
+  data arrival time                                  -2.06
+  -----------------------------------------------------------
+  slack (MET)                                       997.46
+
+
+  Startpoint: count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_0_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_0_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.52       1.39 r
+  U399/Y (NAND3BXLTS)                      0.41       1.80 r
+  U400/Y (XNOR2X1TS)                       0.25       2.05 r
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       2.05 r
+  data arrival time                                   2.05
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.48     999.52
+  data required time                                999.52
+  -----------------------------------------------------------
+  data required time                                999.52
+  data arrival time                                  -2.05
+  -----------------------------------------------------------
+  slack (MET)                                       997.47
+
+
+  Startpoint: count_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_2_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_2_/Q (DFFRXLTS)                0.84       0.84 f
+  U270/Y (NOR3XLTS)                        0.56       1.40 r
+  U397/Y (NAND2BXLTS)                      0.40       1.79 r
+  U398/Y (XNOR2X1TS)                       0.24       2.03 r
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.00       2.03 r
+  data arrival time                                   2.03
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.48     999.52
+  data required time                                999.52
+  -----------------------------------------------------------
+  data required time                                999.52
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                       997.49
+
+
+  Startpoint: count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_0_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_0_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.52       1.39 r
+  U397/Y (NAND2BXLTS)                      0.40       1.79 r
+  U398/Y (XNOR2X1TS)                       0.24       2.03 r
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.00       2.03 r
+  data arrival time                                   2.03
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.48     999.52
+  data required time                                999.52
+  -----------------------------------------------------------
+  data required time                                999.52
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                       997.49
+
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.55       1.43 r
+  U399/Y (NAND3BXLTS)                      0.41       1.84 r
+  U400/Y (XNOR2X1TS)                       0.26       2.09 f
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       2.09 f
+  data arrival time                                   2.09
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -2.09
+  -----------------------------------------------------------
+  slack (MET)                                       997.51
+
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.55       1.43 r
+  U397/Y (NAND2BXLTS)                      0.40       1.82 r
+  U398/Y (XNOR2X1TS)                       0.24       2.07 f
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.00       2.07 f
+  data arrival time                                   2.07
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -2.07
+  -----------------------------------------------------------
+  slack (MET)                                       997.54
+
+
+  Startpoint: count_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_2_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_2_/Q (DFFRXLTS)                0.84       0.84 f
+  U270/Y (NOR3XLTS)                        0.56       1.40 r
+  U399/Y (NAND3BXLTS)                      0.41       1.81 r
+  U400/Y (XNOR2X1TS)                       0.26       2.06 f
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       2.06 f
+  data arrival time                                   2.06
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -2.06
+  -----------------------------------------------------------
+  slack (MET)                                       997.54
+
+
+  Startpoint: count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_0_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_0_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.52       1.39 r
+  U399/Y (NAND3BXLTS)                      0.41       1.80 r
+  U400/Y (XNOR2X1TS)                       0.26       2.06 f
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       2.06 f
+  data arrival time                                   2.06
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -2.06
+  -----------------------------------------------------------
+  slack (MET)                                       997.55
+
+
+  Startpoint: count_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_2_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_2_/Q (DFFRXLTS)                0.84       0.84 f
+  U270/Y (NOR3XLTS)                        0.56       1.40 r
+  U397/Y (NAND2BXLTS)                      0.40       1.79 r
+  U398/Y (XNOR2X1TS)                       0.24       2.04 f
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.00       2.04 f
+  data arrival time                                   2.04
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -2.04
+  -----------------------------------------------------------
+  slack (MET)                                       997.57
+
+
+  Startpoint: count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_0_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_0_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.52       1.39 r
+  U397/Y (NAND2BXLTS)                      0.40       1.79 r
+  U398/Y (XNOR2X1TS)                       0.24       2.03 f
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.00       2.03 f
+  data arrival time                                   2.03
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                       997.57
+
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.55       1.43 r
+  U399/Y (NAND3BXLTS)                      0.41       1.84 r
+  U400/Y (XNOR2X1TS)                       0.17       2.00 f
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       2.00 f
+  data arrival time                                   2.00
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -2.00
+  -----------------------------------------------------------
+  slack (MET)                                       997.60
+
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.55       1.43 r
+  U397/Y (NAND2BXLTS)                      0.40       1.82 r
+  U398/Y (XNOR2X1TS)                       0.15       1.98 f
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.00       1.98 f
+  data arrival time                                   1.98
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -1.98
+  -----------------------------------------------------------
+  slack (MET)                                       997.63
+
+
+  Startpoint: count_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_2_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_2_/Q (DFFRXLTS)                0.84       0.84 f
+  U270/Y (NOR3XLTS)                        0.56       1.40 r
+  U399/Y (NAND3BXLTS)                      0.41       1.81 r
+  U400/Y (XNOR2X1TS)                       0.17       1.97 f
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       1.97 f
+  data arrival time                                   1.97
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -1.97
+  -----------------------------------------------------------
+  slack (MET)                                       997.63
+
+
+  Startpoint: count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_0_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_0_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.52       1.39 r
+  U399/Y (NAND3BXLTS)                      0.41       1.80 r
+  U400/Y (XNOR2X1TS)                       0.17       1.97 f
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       1.97 f
+  data arrival time                                   1.97
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -1.97
+  -----------------------------------------------------------
+  slack (MET)                                       997.64
+
+
+  Startpoint: count_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_2_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_2_/Q (DFFRXLTS)                0.84       0.84 f
+  U270/Y (NOR3XLTS)                        0.56       1.40 r
+  U397/Y (NAND2BXLTS)                      0.40       1.79 r
+  U398/Y (XNOR2X1TS)                       0.15       1.95 f
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.00       1.95 f
+  data arrival time                                   1.95
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -1.95
+  -----------------------------------------------------------
+  slack (MET)                                       997.66
+
+
+  Startpoint: count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_0_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_0_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.52       1.39 r
+  U397/Y (NAND2BXLTS)                      0.40       1.79 r
+  U398/Y (XNOR2X1TS)                       0.15       1.94 f
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.00       1.94 f
+  data arrival time                                   1.94
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.40     999.60
+  data required time                                999.60
+  -----------------------------------------------------------
+  data required time                                999.60
+  data arrival time                                  -1.94
+  -----------------------------------------------------------
+  slack (MET)                                       997.66
+
+
+  Startpoint: count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_0_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_0_/Q (DFFRXLTS)                0.86       0.86 r
+  U270/Y (NOR3XLTS)                        0.27       1.13 f
+  U399/Y (NAND3BXLTS)                      0.34       1.46 f
+  U400/Y (XNOR2X1TS)                       0.25       1.71 r
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       1.71 r
+  data arrival time                                   1.71
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.48     999.52
+  data required time                                999.52
+  -----------------------------------------------------------
+  data required time                                999.52
+  data arrival time                                  -1.71
+  -----------------------------------------------------------
+  slack (MET)                                       997.81
+
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.86       0.86 r
+  U270/Y (NOR3XLTS)                        0.27       1.12 f
+  U399/Y (NAND3BXLTS)                      0.34       1.46 f
+  U400/Y (XNOR2X1TS)                       0.25       1.71 r
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       1.71 r
+  data arrival time                                   1.71
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.48     999.52
+  data required time                                999.52
+  -----------------------------------------------------------
+  data required time                                999.52
+  data arrival time                                  -1.71
+  -----------------------------------------------------------
+  slack (MET)                                       997.82
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__15_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U329/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__15_/D (DFFRXLTS)         0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__15_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__14_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U330/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__14_/D (DFFRXLTS)         0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__14_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__13_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U232/Y (INVX2TS)                         0.09   99002.05 f
+  U331/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__13_/D (DFFRXLTS)         0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__13_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__11_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U333/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__11_/D (DFFRXLTS)         0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__11_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__10_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U334/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__10_/D (DFFRXLTS)         0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__10_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__9_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U232/Y (INVX2TS)                         0.09   99002.05 f
+  U335/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__9_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__9_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__7_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U337/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__7_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__7_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__6_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U338/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__6_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__6_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__5_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U232/Y (INVX2TS)                         0.09   99002.05 f
+  U339/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__5_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__5_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__3_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U341/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__3_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__3_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U342/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__2_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__2_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U232/Y (INVX2TS)                         0.09   99002.05 f
+  U343/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__1_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__1_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__15_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U329/Y (AO22XLTS)                        0.42   99002.47 f
+  FIFO_MEM_reg_0__15_/D (DFFRXLTS)         0.00   99002.47 f
+  data arrival time                               99002.47
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__15_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.47
+  -----------------------------------------------------------
+  slack (MET)                                       997.17
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__14_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U330/Y (AO22XLTS)                        0.42   99002.47 f
+  FIFO_MEM_reg_0__14_/D (DFFRXLTS)         0.00   99002.47 f
+  data arrival time                               99002.47
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__14_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.47
+  -----------------------------------------------------------
+  slack (MET)                                       997.17
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__13_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U232/Y (INVX2TS)                         0.09   99002.05 f
+  U331/Y (AO22XLTS)                        0.42   99002.47 f
+  FIFO_MEM_reg_0__13_/D (DFFRXLTS)         0.00   99002.47 f
+  data arrival time                               99002.47
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__13_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.47
+  -----------------------------------------------------------
+  slack (MET)                                       997.17
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__11_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U333/Y (AO22XLTS)                        0.42   99002.47 f
+  FIFO_MEM_reg_0__11_/D (DFFRXLTS)         0.00   99002.47 f
+  data arrival time                               99002.47
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__11_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.47
+  -----------------------------------------------------------
+  slack (MET)                                       997.17
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__10_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U334/Y (AO22XLTS)                        0.42   99002.47 f
+  FIFO_MEM_reg_0__10_/D (DFFRXLTS)         0.00   99002.47 f
+  data arrival time                               99002.47
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__10_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.47
+  -----------------------------------------------------------
+  slack (MET)                                       997.17
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__3_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U341/Y (AO22XLTS)                        0.42   99002.47 f
+  FIFO_MEM_reg_0__3_/D (DFFRXLTS)          0.00   99002.47 f
+  data arrival time                               99002.47
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__3_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.47
+  -----------------------------------------------------------
+  slack (MET)                                       997.17
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U342/Y (AO22XLTS)                        0.42   99002.47 f
+  FIFO_MEM_reg_0__2_/D (DFFRXLTS)          0.00   99002.47 f
+  data arrival time                               99002.47
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__2_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.47
+  -----------------------------------------------------------
+  slack (MET)                                       997.17
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U232/Y (INVX2TS)                         0.09   99002.05 f
+  U343/Y (AO22XLTS)                        0.42   99002.47 f
+  FIFO_MEM_reg_0__1_/D (DFFRXLTS)          0.00   99002.47 f
+  data arrival time                               99002.47
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__1_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.47
+  -----------------------------------------------------------
+  slack (MET)                                       997.17
+
+
+1

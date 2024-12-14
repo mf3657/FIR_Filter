@@ -1,0 +1,70 @@
+# do runsim.do
+# Model Technology ModelSim DE vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
+# vmap work work 
+# Copying /tools/mentor/ModelSim/2024.2/modelsim_dlx/linuxpe/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:58:38 on Nov 23,2024
+# vlog -reportprogress 300 "+acc" -incr ../../rtl/mem_comp/MEM_top.v 
+# -- Compiling module MEM_top
+# 
+# Top level modules:
+# 	MEM_top
+# End time: 21:58:38 on Nov 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:58:38 on Nov 23,2024
+# vlog -reportprogress 300 "+acc" -incr ../../rtl/mem_comp/IMEM.v 
+# -- Compiling module IMEM
+# 
+# Top level modules:
+# 	IMEM
+# End time: 21:58:39 on Nov 23,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:58:39 on Nov 23,2024
+# vlog -reportprogress 300 "+acc" -incr ../../rtl/mem_comp/CMEM.v 
+# -- Compiling module CMEM
+# 
+# Top level modules:
+# 	CMEM
+# End time: 21:58:39 on Nov 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:58:39 on Nov 23,2024
+# vlog -reportprogress 300 "+acc" -incr MEM_tb.v 
+# -- Compiling module MEM_tb
+# 
+# Top level modules:
+# 	MEM_tb
+# End time: 21:58:39 on Nov 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ps -lib work MEM_tb 
+# Start time: 21:58:39 on Nov 23,2024
+# //  ModelSim DE 2024.2 May 20 2024 Linux 4.18.0-553.27.1.el8_10.x86_64
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.MEM_tb
+# Loading work.MEM_top
+# Loading work.IMEM
+# Loading work.CMEM
+# ** Error: $hold( posedge CLK &&& flag:1250 ns, negedge WEN:1250 ns, 500 ps );
+#    Time: 1250 ns  Iteration: 2  Process: /MEM_tb/uut0/CMEM/#Setuphold# File: ../../rtl/mem_comp/CMEM.v Line: 1166
+# ** Error: $hold( posedge CLK &&& flag:1250 ns, negedge WEN:1250 ns, 500 ps );
+#    Time: 1250 ns  Iteration: 2  Process: /MEM_tb/uut0/IMEM/#Setuphold# File: ../../rtl/mem_comp/IMEM.v Line: 1166
+# ** Note: $finish    : MEM_tb.v(53)
+#    Time: 193500 ns  Iteration: 1  Instance: /MEM_tb
+# 1
+# Break in Module MEM_tb at MEM_tb.v line 53
+# End time: 22:03:09 on Nov 23,2024, Elapsed time: 0:04:30
+# Errors: 2, Warnings: 0

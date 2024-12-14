@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+        -max_paths 10000
+        -sort_by slack
+Design : MEM_top
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 22:14:14 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+xCurr[15] (out)                     1.53 r            1.95         0.42
+xCurr[14] (out)                     1.53 r            1.95         0.42
+xCurr[13] (out)                     1.53 r            1.95         0.42
+xCurr[12] (out)                     1.53 r            1.95         0.42
+xCurr[11] (out)                     1.53 r            1.95         0.42
+xCurr[10] (out)                     1.53 r            1.95         0.42
+xCurr[9] (out)                      1.53 r            1.95         0.42
+xCurr[8] (out)                      1.53 r            1.95         0.42
+xCurr[7] (out)                      1.53 r            1.95         0.42
+xCurr[6] (out)                      1.53 r            1.95         0.42
+xCurr[5] (out)                      1.53 r            1.95         0.42
+xCurr[4] (out)                      1.53 r            1.95         0.42
+xCurr[3] (out)                      1.53 r            1.95         0.42
+xCurr[2] (out)                      1.53 r            1.95         0.42
+xCurr[1] (out)                      1.53 r            1.95         0.42
+xCurr[0] (out)                      1.53 r            1.95         0.42
+coeffCurr[15] (out)                 1.53 r            1.95         0.42
+coeffCurr[14] (out)                 1.53 r            1.95         0.42
+coeffCurr[13] (out)                 1.53 r            1.95         0.42
+coeffCurr[12] (out)                 1.53 r            1.95         0.42
+coeffCurr[11] (out)                 1.53 r            1.95         0.42
+coeffCurr[10] (out)                 1.53 r            1.95         0.42
+coeffCurr[9] (out)                  1.53 r            1.95         0.42
+coeffCurr[8] (out)                  1.53 r            1.95         0.42
+coeffCurr[7] (out)                  1.53 r            1.95         0.42
+coeffCurr[6] (out)                  1.53 r            1.95         0.42
+coeffCurr[5] (out)                  1.53 r            1.95         0.42
+coeffCurr[4] (out)                  1.53 r            1.95         0.42
+coeffCurr[3] (out)                  1.53 r            1.95         0.42
+coeffCurr[2] (out)                  1.53 r            1.95         0.42
+coeffCurr[1] (out)                  1.53 r            1.95         0.42
+coeffCurr[0] (out)                  1.53 r            1.95         0.42
+IMEM/WEN (IMEM)                     0.48 r            1.06         0.58
+IMEM/A[0] (IMEM)                    0.27 r            1.14         0.87
+IMEM/A[1] (IMEM)                    0.27 r            1.14         0.87
+IMEM/A[2] (IMEM)                    0.27 r            1.14         0.87
+IMEM/A[3] (IMEM)                    0.27 r            1.14         0.87
+IMEM/A[4] (IMEM)                    0.27 r            1.14         0.87
+IMEM/A[5] (IMEM)                    0.27 r            1.14         0.87
+CMEM/A[0] (CMEM)                    0.27 r            1.14         0.87
+CMEM/A[1] (CMEM)                    0.27 r            1.14         0.87
+CMEM/A[2] (CMEM)                    0.27 r            1.14         0.87
+CMEM/A[3] (CMEM)                    0.27 r            1.14         0.87
+CMEM/A[4] (CMEM)                    0.27 r            1.14         0.87
+CMEM/A[5] (CMEM)                    0.27 r            1.14         0.87
+CMEM/WEN (CMEM)                     0.34 r            1.22         0.88
+IMEM/D[0] (IMEM)                    0.07 f            1.55         1.48
+IMEM/D[10] (IMEM)                   0.07 f            1.55         1.48
+IMEM/D[11] (IMEM)                   0.07 f            1.55         1.48
+IMEM/D[12] (IMEM)                   0.07 f            1.55         1.48
+IMEM/D[13] (IMEM)                   0.07 f            1.55         1.48
+IMEM/D[14] (IMEM)                   0.07 f            1.55         1.48
+IMEM/D[15] (IMEM)                   0.07 f            1.55         1.48
+IMEM/D[1] (IMEM)                    0.07 f            1.55         1.48
+IMEM/D[2] (IMEM)                    0.07 f            1.55         1.48
+IMEM/D[3] (IMEM)                    0.07 f            1.55         1.48
+IMEM/D[4] (IMEM)                    0.07 f            1.55         1.48
+IMEM/D[5] (IMEM)                    0.07 f            1.55         1.48
+IMEM/D[6] (IMEM)                    0.07 f            1.55         1.48
+IMEM/D[7] (IMEM)                    0.07 f            1.55         1.48
+IMEM/D[8] (IMEM)                    0.07 f            1.55         1.48
+IMEM/D[9] (IMEM)                    0.07 f            1.55         1.48
+CMEM/D[0] (CMEM)                    0.07 f            1.55         1.48
+CMEM/D[10] (CMEM)                   0.07 f            1.55         1.48
+CMEM/D[11] (CMEM)                   0.07 f            1.55         1.48
+CMEM/D[12] (CMEM)                   0.07 f            1.55         1.48
+CMEM/D[13] (CMEM)                   0.07 f            1.55         1.48
+CMEM/D[14] (CMEM)                   0.07 f            1.55         1.48
+CMEM/D[15] (CMEM)                   0.07 f            1.55         1.48
+CMEM/D[1] (CMEM)                    0.07 f            1.55         1.48
+CMEM/D[2] (CMEM)                    0.07 f            1.55         1.48
+CMEM/D[3] (CMEM)                    0.07 f            1.55         1.48
+CMEM/D[4] (CMEM)                    0.07 f            1.55         1.48
+CMEM/D[5] (CMEM)                    0.07 f            1.55         1.48
+CMEM/D[6] (CMEM)                    0.07 f            1.55         1.48
+CMEM/D[7] (CMEM)                    0.07 f            1.55         1.48
+CMEM/D[8] (CMEM)                    0.07 f            1.55         1.48
+CMEM/D[9] (CMEM)                    0.07 f            1.55         1.48
+
+1

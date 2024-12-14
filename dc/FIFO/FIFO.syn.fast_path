@@ -1,0 +1,2520 @@
+ 
+****************************************
+Report : timing
+        -path short
+        -delay min
+        -max_paths 10000
+        -sort_by slack
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: count_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 r
+  wr_en (in)                               0.00   100000.10 r
+  ...
+  count_reg_0_/D (DFFRXLTS)                0.21   100000.31 f
+  data arrival time                               100000.31
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  count_reg_0_/CK (DFFRXLTS)               0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.31
+  -----------------------------------------------------------
+  slack (MET)                                         0.33
+
+
+  Startpoint: rd_en (input port clocked by clk_rd)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  rd_en (in)                               0.00       0.10 f
+  ...
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.26       0.36 f
+  data arrival time                                   0.36
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.36
+  -----------------------------------------------------------
+  slack (MET)                                         0.35
+
+
+  Startpoint: rd_en (input port clocked by clk_rd)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  rd_en (in)                               0.00       0.10 f
+  ...
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.28       0.38 f
+  data arrival time                                   0.38
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.38
+  -----------------------------------------------------------
+  slack (MET)                                         0.37
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: count_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 r
+  wr_en (in)                               0.00   100000.10 r
+  ...
+  count_reg_1_/D (DFFRXLTS)                0.27   100000.37 f
+  data arrival time                               100000.37
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  count_reg_1_/CK (DFFRXLTS)               0.00   100000.00 r
+  library hold time                       -0.01   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.38
+
+
+  Startpoint: wr_data[0] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[0] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__0_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__0_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[9] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__9_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[9] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__9_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__9_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[8] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__8_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[8] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__8_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__8_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[12]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__12_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[12] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__12_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__12_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[4] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__4_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[4] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__4_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__4_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[12]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__12_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[12] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__12_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__12_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[12]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__12_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[12] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__12_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__12_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[0] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[0] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__0_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__0_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[13]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__13_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[13] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__13_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__13_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[12]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__12_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[12] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__12_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__12_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[8] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__8_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[8] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__8_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__8_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[7] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__7_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[7] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__7_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__7_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[5] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__5_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[5] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__5_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__5_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[4] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__4_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[4] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__4_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__4_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[3] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__3_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[3] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__3_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__3_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[15]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__15_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[15] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__15_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__15_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[9] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__9_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[9] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__9_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__9_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[1] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[1] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__1_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__1_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[15]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__15_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[15] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__15_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__15_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[14]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__14_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[14] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__14_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__14_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[13]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__13_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[13] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__13_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__13_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[11]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__11_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[11] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__11_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__11_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[10]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__10_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[10] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__10_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__10_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[8] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__8_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[8] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__8_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__8_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[7] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__7_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[7] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__7_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__7_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[6] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__6_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[6] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__6_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__6_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[5] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__5_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[5] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__5_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__5_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[4] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__4_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[4] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__4_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__4_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[3] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__3_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[3] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__3_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__3_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[2] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[2] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__2_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__2_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[15]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__15_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[15] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__15_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__15_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[14]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__14_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[14] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__14_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__14_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[13]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__13_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[13] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__13_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__13_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[11]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__11_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[11] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__11_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__11_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[10]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__10_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[10] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__10_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__10_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[8] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__8_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[8] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__8_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__8_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[7] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__7_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[7] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__7_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__7_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[6] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__6_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[6] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__6_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__6_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[5] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__5_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[5] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__5_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__5_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[4] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__4_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[4] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__4_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__4_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[3] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__3_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[3] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__3_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__3_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[2] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[2] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__2_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__2_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[0] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[0] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__0_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__0_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[9] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__9_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[9] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__9_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__9_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[1] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[1] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_1__1_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__1_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[0] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[0] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__0_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__0_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[9] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__9_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[9] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__9_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__9_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[1] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[1] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_2__1_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__1_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[14]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__14_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[14] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__14_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__14_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[10]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__10_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[10] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__10_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__10_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[11]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__11_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[11] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__11_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__11_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[6] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__6_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[6] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__6_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__6_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[2] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[2] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_0__2_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__2_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[11]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__11_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[11] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__11_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__11_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[10]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__10_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[10] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__10_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__10_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[7] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__7_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[7] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__7_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__7_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[6] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__6_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[6] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__6_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__6_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[5] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__5_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[5] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__5_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__5_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[3] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__3_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[3] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__3_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__3_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[2] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[2] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__2_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__2_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[1] (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[1] (in)                          0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__1_/D (DFFRXLTS)          0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__1_/CK (DFFRXLTS)         0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[15]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__15_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[15] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__15_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__15_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[14]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__14_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[14] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__14_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__14_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_data[13]
+              (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__13_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_data[13] (in)                         0.00   100000.10 f
+  ...
+  FIFO_MEM_reg_3__13_/D (DFFRXLTS)         0.41   100000.51 f
+  data arrival time                               100000.51
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__13_/CK (DFFRXLTS)        0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: count_reg_2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_en (in)                               0.00   100000.10 f
+  ...
+  count_reg_2_/D (DFFRXLTS)                0.44   100000.54 f
+  data arrival time                               100000.54
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  count_reg_2_/CK (DFFRXLTS)               0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.54
+  -----------------------------------------------------------
+  slack (MET)                                         0.56
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: wr_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_en (in)                               0.00   100000.10 f
+  ...
+  wr_ptr_reg_1_/D (DFFRXLTS)               0.75   100000.85 f
+  data arrival time                               100000.85
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  wr_ptr_reg_1_/CK (DFFRXLTS)              0.00   100000.00 r
+  library hold time                       -0.01   99999.99
+  data required time                              99999.99
+  -----------------------------------------------------------
+  data required time                              99999.99
+  data arrival time                               -100000.85
+  -----------------------------------------------------------
+  slack (MET)                                         0.86
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: wr_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  input external delay                     0.10   100000.10 f
+  wr_en (in)                               0.00   100000.10 f
+  ...
+  wr_ptr_reg_0_/D (DFFRXLTS)               0.85   100000.95 f
+  data arrival time                               100000.95
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  wr_ptr_reg_0_/CK (DFFRXLTS)              0.00   100000.00 r
+  library hold time                       -0.02   99999.98
+  data required time                              99999.98
+  -----------------------------------------------------------
+  data required time                              99999.98
+  data arrival time                               -100000.95
+  -----------------------------------------------------------
+  slack (MET)                                         0.97
+
+
+  Startpoint: FIFO_MEM_reg_1__15_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[15]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__15_/CK (DFFRXLTS)        0.00       0.00 r
+  FIFO_MEM_reg_1__15_/Q (DFFRXLTS)         0.75       0.75 r
+  ...
+  rd_data[15] (out)                        0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__14_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[14]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__14_/CK (DFFRXLTS)        0.00       0.00 r
+  FIFO_MEM_reg_1__14_/Q (DFFRXLTS)         0.75       0.75 r
+  ...
+  rd_data[14] (out)                        0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__13_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[13]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__13_/CK (DFFRXLTS)        0.00       0.00 r
+  FIFO_MEM_reg_1__13_/Q (DFFRXLTS)         0.75       0.75 r
+  ...
+  rd_data[13] (out)                        0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__12_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[12]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__12_/CK (DFFRXLTS)        0.00       0.00 r
+  FIFO_MEM_reg_1__12_/Q (DFFRXLTS)         0.75       0.75 r
+  ...
+  rd_data[12] (out)                        0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__11_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[11]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__11_/CK (DFFRXLTS)        0.00       0.00 r
+  FIFO_MEM_reg_1__11_/Q (DFFRXLTS)         0.75       0.75 r
+  ...
+  rd_data[11] (out)                        0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__10_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[10]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__10_/CK (DFFRXLTS)        0.00       0.00 r
+  FIFO_MEM_reg_1__10_/Q (DFFRXLTS)         0.75       0.75 r
+  ...
+  rd_data[10] (out)                        0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__9_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[9] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__9_/CK (DFFRXLTS)         0.00       0.00 r
+  FIFO_MEM_reg_1__9_/Q (DFFRXLTS)          0.75       0.75 r
+  ...
+  rd_data[9] (out)                         0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__8_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[8] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__8_/CK (DFFRXLTS)         0.00       0.00 r
+  FIFO_MEM_reg_1__8_/Q (DFFRXLTS)          0.75       0.75 r
+  ...
+  rd_data[8] (out)                         0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__7_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[7] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__7_/CK (DFFRXLTS)         0.00       0.00 r
+  FIFO_MEM_reg_1__7_/Q (DFFRXLTS)          0.75       0.75 r
+  ...
+  rd_data[7] (out)                         0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__6_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[6] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__6_/CK (DFFRXLTS)         0.00       0.00 r
+  FIFO_MEM_reg_1__6_/Q (DFFRXLTS)          0.75       0.75 r
+  ...
+  rd_data[6] (out)                         0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__5_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[5] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__5_/CK (DFFRXLTS)         0.00       0.00 r
+  FIFO_MEM_reg_1__5_/Q (DFFRXLTS)          0.75       0.75 r
+  ...
+  rd_data[5] (out)                         0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__4_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[4] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__4_/CK (DFFRXLTS)         0.00       0.00 r
+  FIFO_MEM_reg_1__4_/Q (DFFRXLTS)          0.75       0.75 r
+  ...
+  rd_data[4] (out)                         0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__3_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[3] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__3_/CK (DFFRXLTS)         0.00       0.00 r
+  FIFO_MEM_reg_1__3_/Q (DFFRXLTS)          0.75       0.75 r
+  ...
+  rd_data[3] (out)                         0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__2_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[2] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__2_/CK (DFFRXLTS)         0.00       0.00 r
+  FIFO_MEM_reg_1__2_/Q (DFFRXLTS)          0.75       0.75 r
+  ...
+  rd_data[2] (out)                         0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[1] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__1_/CK (DFFRXLTS)         0.00       0.00 r
+  FIFO_MEM_reg_1__1_/Q (DFFRXLTS)          0.75       0.75 r
+  ...
+  rd_data[1] (out)                         0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: FIFO_MEM_reg_1__0_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_data[0] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  FIFO_MEM_reg_1__0_/CK (DFFRXLTS)         0.00       0.00 r
+  FIFO_MEM_reg_1__0_/Q (DFFRXLTS)          0.75       0.75 r
+  ...
+  rd_data[0] (out)                         0.28       1.03 r
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: count_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: empty (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_2_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_2_/Q (DFFRXLTS)                0.79       0.79 r
+  ...
+  empty (out)                              0.24       1.03 f
+  data arrival time                                   1.03
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.13
+
+
+  Startpoint: count_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: full (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_0_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_0_/Q (DFFRXLTS)                0.86       0.86 r
+  ...
+  full (out)                               0.24       1.10 f
+  data arrival time                                   1.10
+
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -1.10
+  -----------------------------------------------------------
+  slack (MET)                                         1.20
+
+
+1

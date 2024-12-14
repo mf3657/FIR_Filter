@@ -1,0 +1,3163 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10000
+        -sort_by slack
+Design : FIFO
+Version: U-2022.12-SP7
+Date   : Wed Dec  4 14:49:42 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__15_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U329/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__15_/D (DFFRXLTS)         0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__15_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__14_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U330/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__14_/D (DFFRXLTS)         0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__14_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__13_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U232/Y (INVX2TS)                         0.09   99002.05 f
+  U331/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__13_/D (DFFRXLTS)         0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__13_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__11_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U333/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__11_/D (DFFRXLTS)         0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__11_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__10_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U334/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__10_/D (DFFRXLTS)         0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__10_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__9_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U232/Y (INVX2TS)                         0.09   99002.05 f
+  U335/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__9_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__9_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__7_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U337/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__7_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__7_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__6_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U338/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__6_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__6_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__5_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U232/Y (INVX2TS)                         0.09   99002.05 f
+  U339/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__5_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__5_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__3_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U230/Y (INVX2TS)                         0.09   99002.05 f
+  U341/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__3_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__3_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U231/Y (INVX2TS)                         0.09   99002.05 f
+  U342/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__2_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__2_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U152/Y (INVX2TS)                         0.09   99001.76 r
+  U229/Y (CLKBUFX2TS)                      0.20   99001.96 r
+  U232/Y (INVX2TS)                         0.09   99002.05 f
+  U343/Y (AO22XLTS)                        0.45   99002.49 f
+  FIFO_MEM_reg_0__1_/D (DFFRXLTS)          0.00   99002.49 f
+  data arrival time                               99002.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__1_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.49
+  -----------------------------------------------------------
+  slack (MET)                                       997.15
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U234/Y (INVX2TS)                         0.09   99001.80 f
+  U363/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__0_/D (DFFRXLTS)          0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__0_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__15_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U235/Y (INVX2TS)                         0.09   99001.80 f
+  U364/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__15_/D (DFFRXLTS)         0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__15_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__14_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U236/Y (INVX2TS)                         0.09   99001.80 f
+  U365/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__14_/D (DFFRXLTS)         0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__14_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__13_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U237/Y (INVX2TS)                         0.09   99001.80 f
+  U366/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__13_/D (DFFRXLTS)         0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__13_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__12_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U234/Y (INVX2TS)                         0.09   99001.80 f
+  U367/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__12_/D (DFFRXLTS)         0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__12_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__11_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U235/Y (INVX2TS)                         0.09   99001.80 f
+  U368/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__11_/D (DFFRXLTS)         0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__11_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__10_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U236/Y (INVX2TS)                         0.09   99001.80 f
+  U369/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__10_/D (DFFRXLTS)         0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__10_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__9_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U237/Y (INVX2TS)                         0.09   99001.80 f
+  U370/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__9_/D (DFFRXLTS)          0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__9_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__8_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U234/Y (INVX2TS)                         0.09   99001.80 f
+  U371/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__8_/D (DFFRXLTS)          0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__8_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__7_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U235/Y (INVX2TS)                         0.09   99001.80 f
+  U372/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__7_/D (DFFRXLTS)          0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__7_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__6_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U236/Y (INVX2TS)                         0.09   99001.80 f
+  U373/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__6_/D (DFFRXLTS)          0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__6_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__5_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U237/Y (INVX2TS)                         0.09   99001.80 f
+  U374/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__5_/D (DFFRXLTS)          0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__5_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__4_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U234/Y (INVX2TS)                         0.09   99001.80 f
+  U375/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__4_/D (DFFRXLTS)          0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__4_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__3_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U235/Y (INVX2TS)                         0.09   99001.80 f
+  U376/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__3_/D (DFFRXLTS)          0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__3_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U236/Y (INVX2TS)                         0.09   99001.80 f
+  U377/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__2_/D (DFFRXLTS)          0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__2_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_2__1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U362/Y (NOR3XLTS)                        0.41   99001.09 r
+  U154/Y (INVX2TS)                         0.28   99001.38 f
+  U155/Y (INVX2TS)                         0.12   99001.49 r
+  U233/Y (CLKBUFX2TS)                      0.22   99001.71 r
+  U237/Y (INVX2TS)                         0.09   99001.80 f
+  U378/Y (AO22XLTS)                        0.45   99002.26 f
+  FIFO_MEM_reg_2__1_/D (DFFRXLTS)          0.00   99002.26 f
+  data arrival time                               99002.26
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_2__1_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.26
+  -----------------------------------------------------------
+  slack (MET)                                       997.38
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U225/Y (INVX2TS)                         0.10   99001.79 f
+  U346/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__0_/D (DFFRXLTS)          0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__0_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__15_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U226/Y (INVX2TS)                         0.10   99001.79 f
+  U347/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__15_/D (DFFRXLTS)         0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__15_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__14_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U227/Y (INVX2TS)                         0.10   99001.79 f
+  U348/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__14_/D (DFFRXLTS)         0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__14_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__13_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U228/Y (INVX2TS)                         0.10   99001.79 f
+  U349/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__13_/D (DFFRXLTS)         0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__13_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__12_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U225/Y (INVX2TS)                         0.10   99001.79 f
+  U350/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__12_/D (DFFRXLTS)         0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__12_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__11_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U226/Y (INVX2TS)                         0.10   99001.79 f
+  U351/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__11_/D (DFFRXLTS)         0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__11_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__10_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U227/Y (INVX2TS)                         0.10   99001.79 f
+  U352/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__10_/D (DFFRXLTS)         0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__10_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__9_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U228/Y (INVX2TS)                         0.10   99001.79 f
+  U353/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__9_/D (DFFRXLTS)          0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__9_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__8_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U225/Y (INVX2TS)                         0.10   99001.79 f
+  U354/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__8_/D (DFFRXLTS)          0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__8_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__7_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U226/Y (INVX2TS)                         0.10   99001.79 f
+  U355/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__7_/D (DFFRXLTS)          0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__7_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__6_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U227/Y (INVX2TS)                         0.10   99001.79 f
+  U356/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__6_/D (DFFRXLTS)          0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__6_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__5_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U228/Y (INVX2TS)                         0.10   99001.79 f
+  U357/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__5_/D (DFFRXLTS)          0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__5_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__4_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U225/Y (INVX2TS)                         0.10   99001.79 f
+  U358/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__4_/D (DFFRXLTS)          0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__4_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__3_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U226/Y (INVX2TS)                         0.10   99001.79 f
+  U359/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__3_/D (DFFRXLTS)          0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__3_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U227/Y (INVX2TS)                         0.10   99001.79 f
+  U360/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__2_/D (DFFRXLTS)          0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__2_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_1__1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U345/Y (NOR2XLTS)                        0.35   99001.12 r
+  U157/Y (INVX2TS)                         0.24   99001.36 f
+  U158/Y (INVX2TS)                         0.11   99001.47 r
+  U224/Y (CLKBUFX2TS)                      0.22   99001.69 r
+  U228/Y (INVX2TS)                         0.10   99001.79 f
+  U361/Y (AO22XLTS)                        0.45   99002.23 f
+  FIFO_MEM_reg_1__1_/D (DFFRXLTS)          0.00   99002.23 f
+  data arrival time                               99002.23
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_1__1_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.23
+  -----------------------------------------------------------
+  slack (MET)                                       997.41
+
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.55       1.43 r
+  U399/Y (NAND3BXLTS)                      0.41       1.84 r
+  U400/Y (XNOR2X1TS)                       0.25       2.09 r
+  rd_ptr_reg_1_/D (DFFRX2TS)               0.00       2.09 r
+  data arrival time                                   2.09
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.48     999.52
+  data required time                                999.52
+  -----------------------------------------------------------
+  data required time                                999.52
+  data arrival time                                  -2.09
+  -----------------------------------------------------------
+  slack (MET)                                       997.43
+
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: rd_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.55       1.43 r
+  U397/Y (NAND2BXLTS)                      0.40       1.82 r
+  U398/Y (XNOR2X1TS)                       0.24       2.06 r
+  rd_ptr_reg_0_/D (DFFRX2TS)               0.00       2.06 r
+  data arrival time                                   2.06
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  rd_ptr_reg_0_/CK (DFFRX2TS)              0.00    1000.00 r
+  library setup time                      -0.48     999.52
+  data required time                                999.52
+  -----------------------------------------------------------
+  data required time                                999.52
+  data arrival time                                  -2.06
+  -----------------------------------------------------------
+  slack (MET)                                       997.46
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U168/Y (INVX2TS)                         0.10   99001.70 f
+  U379/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__0_/D (DFFRXLTS)          0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__0_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__15_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U169/Y (INVX2TS)                         0.10   99001.70 f
+  U380/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__15_/D (DFFRXLTS)         0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__15_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__14_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U170/Y (INVX2TS)                         0.10   99001.70 f
+  U381/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__14_/D (DFFRXLTS)         0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__14_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__13_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U171/Y (INVX2TS)                         0.10   99001.70 f
+  U382/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__13_/D (DFFRXLTS)         0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__13_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__12_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U168/Y (INVX2TS)                         0.10   99001.70 f
+  U383/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__12_/D (DFFRXLTS)         0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__12_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__11_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U169/Y (INVX2TS)                         0.10   99001.70 f
+  U384/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__11_/D (DFFRXLTS)         0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__11_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__10_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U170/Y (INVX2TS)                         0.10   99001.70 f
+  U385/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__10_/D (DFFRXLTS)         0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__10_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__9_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U171/Y (INVX2TS)                         0.10   99001.70 f
+  U386/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__9_/D (DFFRXLTS)          0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__9_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__8_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U168/Y (INVX2TS)                         0.10   99001.70 f
+  U387/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__8_/D (DFFRXLTS)          0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__8_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__7_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U169/Y (INVX2TS)                         0.10   99001.70 f
+  U388/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__7_/D (DFFRXLTS)          0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__7_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__6_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U170/Y (INVX2TS)                         0.10   99001.70 f
+  U389/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__6_/D (DFFRXLTS)          0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__6_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__5_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U171/Y (INVX2TS)                         0.10   99001.70 f
+  U390/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__5_/D (DFFRXLTS)          0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__5_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__4_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U168/Y (INVX2TS)                         0.10   99001.70 f
+  U391/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__4_/D (DFFRXLTS)          0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__4_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__3_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U169/Y (INVX2TS)                         0.10   99001.70 f
+  U392/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__3_/D (DFFRXLTS)          0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__3_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U170/Y (INVX2TS)                         0.10   99001.70 f
+  U393/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__2_/D (DFFRXLTS)          0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__2_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_3__1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U167/Y (INVX2TS)                         0.13   99001.59 r
+  U171/Y (INVX2TS)                         0.10   99001.70 f
+  U394/Y (AO22XLTS)                        0.45   99002.14 f
+  FIFO_MEM_reg_3__1_/D (DFFRXLTS)          0.00   99002.14 f
+  data arrival time                               99002.14
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_3__1_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.14
+  -----------------------------------------------------------
+  slack (MET)                                       997.50
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__12_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U332/Y (AO22XLTS)                        0.46   99002.13 f
+  FIFO_MEM_reg_0__12_/D (DFFRXLTS)         0.00   99002.13 f
+  data arrival time                               99002.13
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__12_/CK (DFFRXLTS)        0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.13
+  -----------------------------------------------------------
+  slack (MET)                                       997.51
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__8_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U173/Y (INVX2TS)                         0.12   99001.59 r
+  U151/Y (INVX2TS)                         0.09   99001.67 f
+  U336/Y (AO22XLTS)                        0.46   99002.13 f
+  FIFO_MEM_reg_0__8_/D (DFFRXLTS)          0.00   99002.13 f
+  data arrival time                               99002.13
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__8_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99002.13
+  -----------------------------------------------------------
+  slack (MET)                                       997.51
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U328/Y (AO22XLTS)                        0.48   99001.95 f
+  FIFO_MEM_reg_0__0_/D (DFFRXLTS)          0.00   99001.95 f
+  data arrival time                               99001.95
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__0_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99001.95
+  -----------------------------------------------------------
+  slack (MET)                                       997.70
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: FIFO_MEM_reg_0__4_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U326/Y (INVX2TS)                         0.15   99000.69 f
+  U327/Y (NOR3XLTS)                        0.48   99001.17 r
+  U172/Y (INVX2TS)                         0.29   99001.46 f
+  U340/Y (AO22XLTS)                        0.48   99001.95 f
+  FIFO_MEM_reg_0__4_/D (DFFRXLTS)          0.00   99001.95 f
+  data arrival time                               99001.95
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  FIFO_MEM_reg_0__4_/CK (DFFRXLTS)         0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99001.95
+  -----------------------------------------------------------
+  slack (MET)                                       997.70
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[15]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U183/Y (INVX2TS)                         0.18       1.46 f
+  U274/Y (AOI22X1TS)                       0.23       1.69 r
+  U275/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[15] (out)                        0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[14]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U184/Y (INVX2TS)                         0.18       1.46 f
+  U277/Y (AOI22X1TS)                       0.23       1.69 r
+  U278/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[14] (out)                        0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[13]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U185/Y (INVX2TS)                         0.18       1.46 f
+  U280/Y (AOI22X1TS)                       0.23       1.69 r
+  U281/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[13] (out)                        0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[12]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U186/Y (INVX2TS)                         0.18       1.46 f
+  U283/Y (AOI22X1TS)                       0.23       1.69 r
+  U284/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[12] (out)                        0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[11]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U183/Y (INVX2TS)                         0.18       1.46 f
+  U286/Y (AOI22X1TS)                       0.23       1.69 r
+  U287/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[11] (out)                        0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[10]
+            (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U184/Y (INVX2TS)                         0.18       1.46 f
+  U289/Y (AOI22X1TS)                       0.23       1.69 r
+  U290/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[10] (out)                        0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[9] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U185/Y (INVX2TS)                         0.18       1.46 f
+  U292/Y (AOI22X1TS)                       0.23       1.69 r
+  U293/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[9] (out)                         0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[8] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U186/Y (INVX2TS)                         0.18       1.46 f
+  U295/Y (AOI22X1TS)                       0.23       1.69 r
+  U296/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[8] (out)                         0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[7] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U183/Y (INVX2TS)                         0.18       1.46 f
+  U298/Y (AOI22X1TS)                       0.23       1.69 r
+  U299/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[7] (out)                         0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[6] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U184/Y (INVX2TS)                         0.18       1.46 f
+  U301/Y (AOI22X1TS)                       0.23       1.69 r
+  U302/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[6] (out)                         0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[5] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U185/Y (INVX2TS)                         0.18       1.46 f
+  U304/Y (AOI22X1TS)                       0.23       1.69 r
+  U305/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[5] (out)                         0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[4] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U186/Y (INVX2TS)                         0.18       1.46 f
+  U307/Y (AOI22X1TS)                       0.23       1.69 r
+  U308/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[4] (out)                         0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[3] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U183/Y (INVX2TS)                         0.18       1.46 f
+  U310/Y (AOI22X1TS)                       0.23       1.69 r
+  U311/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[3] (out)                         0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[2] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U184/Y (INVX2TS)                         0.18       1.46 f
+  U313/Y (AOI22X1TS)                       0.23       1.69 r
+  U314/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[2] (out)                         0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[1] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U185/Y (INVX2TS)                         0.18       1.46 f
+  U316/Y (AOI22X1TS)                       0.23       1.69 r
+  U317/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[1] (out)                         0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: rd_ptr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_rd)
+  Endpoint: rd_data[0] (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg_1_/CK (DFFRX2TS)              0.00       0.00 r
+  rd_ptr_reg_1_/QN (DFFRX2TS)              0.97       0.97 r
+  U149/Y (OR2X1TS)                         0.31       1.28 r
+  U186/Y (INVX2TS)                         0.18       1.46 f
+  U319/Y (AOI22X1TS)                       0.23       1.69 r
+  U320/Y (NAND2X1TS)                       0.17       1.86 f
+  rd_data[0] (out)                         0.00       1.86 f
+  data arrival time                                   1.86
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.86
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: wr_ptr_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U238/Y (OR2X1TS)                         0.46   99001.23 f
+  U239/Y (INVX2TS)                         0.14   99001.37 r
+  U160/Y (INVX2TS)                         0.09   99001.46 f
+  U161/Y (INVX2TS)                         0.09   99001.55 r
+  U396/Y (AOI21X1TS)                       0.06   99001.61 f
+  wr_ptr_reg_1_/D (DFFRXLTS)               0.00   99001.61 f
+  data arrival time                               99001.61
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  wr_ptr_reg_1_/CK (DFFRXLTS)              0.00   100000.00 r
+  library setup time                      -0.35   99999.65
+  data required time                              99999.65
+  -----------------------------------------------------------
+  data required time                              99999.65
+  data arrival time                               -99001.61
+  -----------------------------------------------------------
+  slack (MET)                                       998.04
+
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: empty (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.88       0.88 f
+  U270/Y (NOR3XLTS)                        0.55       1.43 r
+  empty (out)                              0.00       1.43 r
+  data arrival time                                   1.43
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.43
+  -----------------------------------------------------------
+  slack (MET)                                       998.47
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: wr_ptr_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U344/Y (NAND2X1TS)                       0.23   99000.77 f
+  U395/Y (OA21XLTS)                        0.27   99001.03 f
+  wr_ptr_reg_0_/D (DFFRXLTS)               0.00   99001.03 f
+  data arrival time                               99001.03
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  wr_ptr_reg_0_/CK (DFFRXLTS)              0.00   100000.00 r
+  library setup time                      -0.36   99999.64
+  data required time                              99999.64
+  -----------------------------------------------------------
+  data required time                              99999.64
+  data arrival time                               -99001.03
+  -----------------------------------------------------------
+  slack (MET)                                       998.61
+
+
+  Startpoint: count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk_wr)
+  Endpoint: full (output port clocked by clk_rd)
+  Path Group: clk_rd
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_wr (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg_1_/CK (DFFRXLTS)               0.00       0.00 r
+  count_reg_1_/Q (DFFRXLTS)                0.88       0.88 f
+  U269/Y (NOR3BX1TS)                       0.36       1.24 r
+  full (out)                               0.00       1.24 r
+  data arrival time                                   1.24
+
+  clock clk_rd (rise edge)              1000.00    1000.00
+  clock network delay (ideal)              0.00    1000.00
+  output external delay                   -0.10     999.90
+  data required time                                999.90
+  -----------------------------------------------------------
+  data required time                                999.90
+  data arrival time                                  -1.24
+  -----------------------------------------------------------
+  slack (MET)                                       998.66
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: count_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U220/Y (INVX2TS)                         0.07   99000.22 r
+  U321/Y (NOR2BX1TS)                       0.32   99000.54 r
+  U322/Y (AOI2BB2XLTS)                     0.31   99000.85 r
+  count_reg_0_/D (DFFRXLTS)                0.00   99000.85 r
+  data arrival time                               99000.85
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  count_reg_0_/CK (DFFRXLTS)               0.00   100000.00 r
+  library setup time                      -0.43   99999.57
+  data required time                              99999.57
+  -----------------------------------------------------------
+  data required time                              99999.57
+  data arrival time                               -99000.85
+  -----------------------------------------------------------
+  slack (MET)                                       998.72
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: count_reg_2_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 f
+  wr_en (in)                               0.00   99000.10 f
+  U219/Y (INVX2TS)                         0.06   99000.16 r
+  U221/Y (INVX2TS)                         0.07   99000.23 f
+  U323/Y (NAND3XLTS)                       0.15   99000.38 r
+  U324/Y (XNOR2X1TS)                       0.25   99000.63 r
+  count_reg_2_/D (DFFRXLTS)                0.00   99000.63 r
+  data arrival time                               99000.63
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  count_reg_2_/CK (DFFRXLTS)               0.00   100000.00 r
+  library setup time                      -0.46   99999.54
+  data required time                              99999.54
+  -----------------------------------------------------------
+  data required time                              99999.54
+  data arrival time                               -99000.63
+  -----------------------------------------------------------
+  slack (MET)                                       998.91
+
+
+  Startpoint: wr_en (input port clocked by clk_rd)
+  Endpoint: count_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_wr)
+  Path Group: clk_wr
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_rd (rise edge)             99000.00   99000.00
+  clock network delay (ideal)              0.00   99000.00
+  input external delay                     0.10   99000.10 r
+  wr_en (in)                               0.00   99000.10 r
+  U219/Y (INVX2TS)                         0.05   99000.15 f
+  U221/Y (INVX2TS)                         0.06   99000.21 r
+  U325/Y (NAND2X1TS)                       0.10   99000.31 f
+  U223/Y (AOI32X1TS)                       0.18   99000.49 r
+  count_reg_1_/D (DFFRXLTS)                0.00   99000.49 r
+  data arrival time                               99000.49
+
+  clock clk_wr (rise edge)             100000.00  100000.00
+  clock network delay (ideal)              0.00   100000.00
+  count_reg_1_/CK (DFFRXLTS)               0.00   100000.00 r
+  library setup time                      -0.43   99999.58
+  data required time                              99999.58
+  -----------------------------------------------------------
+  data required time                              99999.58
+  data arrival time                               -99000.49
+  -----------------------------------------------------------
+  slack (MET)                                       999.09
+
+
+1

@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+        -max_paths 10000
+        -sort_by slack
+Design : MEM_top
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 22:14:14 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+xCurr[15] (out)                     1.53 r            1.95         0.42
+xCurr[14] (out)                     1.53 r            1.95         0.42
+xCurr[13] (out)                     1.53 r            1.95         0.42
+xCurr[12] (out)                     1.53 r            1.95         0.42
+xCurr[11] (out)                     1.53 r            1.95         0.42
+xCurr[10] (out)                     1.53 r            1.95         0.42
+xCurr[9] (out)                      1.53 r            1.95         0.42
+xCurr[8] (out)                      1.53 r            1.95         0.42
+xCurr[7] (out)                      1.53 r            1.95         0.42
+xCurr[6] (out)                      1.53 r            1.95         0.42
+xCurr[5] (out)                      1.53 r            1.95         0.42
+xCurr[4] (out)                      1.53 r            1.95         0.42
+xCurr[3] (out)                      1.53 r            1.95         0.42
+xCurr[2] (out)                      1.53 r            1.95         0.42
+xCurr[1] (out)                      1.53 r            1.95         0.42
+xCurr[0] (out)                      1.53 r            1.95         0.42
+coeffCurr[15] (out)                 1.53 r            1.95         0.42
+coeffCurr[14] (out)                 1.53 r            1.95         0.42
+coeffCurr[13] (out)                 1.53 r            1.95         0.42
+coeffCurr[12] (out)                 1.53 r            1.95         0.42
+coeffCurr[11] (out)                 1.53 r            1.95         0.42
+coeffCurr[10] (out)                 1.53 r            1.95         0.42
+coeffCurr[9] (out)                  1.53 r            1.95         0.42
+coeffCurr[8] (out)                  1.53 r            1.95         0.42
+coeffCurr[7] (out)                  1.53 r            1.95         0.42
+coeffCurr[6] (out)                  1.53 r            1.95         0.42
+coeffCurr[5] (out)                  1.53 r            1.95         0.42
+coeffCurr[4] (out)                  1.53 r            1.95         0.42
+coeffCurr[3] (out)                  1.53 r            1.95         0.42
+coeffCurr[2] (out)                  1.53 r            1.95         0.42
+coeffCurr[1] (out)                  1.53 r            1.95         0.42
+coeffCurr[0] (out)                  1.53 r            1.95         0.42
+
+1
